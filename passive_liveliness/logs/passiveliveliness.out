@@ -1,0 +1,1249 @@
+2023-10-09 13:48:23,443 [INFO] [_internal.py:96]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-10-09 13:48:23,443 [INFO] [_internal.py:96]: [33mPress CTRL+C to quit[0m
+2023-10-09 13:48:40,096 [INFO] [test_pad.py:37]: inside the presentation attack detection
+2023-10-09 13:48:40,140 [INFO] [test_pad.py:58]: height_width_ratio = 0.75
+2023-10-09 13:48:40,140 [INFO] [test_pad.py:26]: height is 1200
+2023-10-09 13:48:40,140 [INFO] [test_pad.py:27]: width is 1600
+2023-10-09 13:48:40,140 [INFO] [test_pad.py:29]: Image is not appropriate!!! Height Width should be 4/3.
+2023-10-09 13:48:40,161 [INFO] [test_pad.py:127]: w_input = 80, h_input = 80
+2023-10-09 13:48:40,267 [INFO] [test_pad.py:127]: w_input = 80, h_input = 80
+2023-10-09 13:48:40,342 [INFO] [test_pad.py:144]: prediction is [[6.54303964e-04 1.99261552e+00 6.73004525e-03]]
+2023-10-09 13:48:40,342 [INFO] [test_pad.py:156]: value is 99.6307760477066
+2023-10-09 13:48:40,342 [INFO] [test_pad.py:157]: label is 1
+2023-10-09 13:48:40,342 [INFO] [test_pad.py:161]: Image 'image_folder/pass4_1E6L26P.jpeg' is Real Face. Score: 99.63.
+2023-10-09 13:48:40,342 [INFO] [test_pad.py:172]: Prediction cost 0.18 s
+2023-10-09 13:48:40,342 [INFO] [test_pad.py:193]: warning
+2023-10-09 13:48:40,479 [INFO] [test_pad.py:200]: ---------------------------passive--------------------------
+2023-10-09 13:48:40,480 [INFO] [main.py:61]: passive liveliness check is done
+2023-10-09 13:48:40,481 [INFO] [_internal.py:96]: 127.0.0.1 - - [09/Oct/2023 13:48:40] "POST /passive_liveliness HTTP/1.1" 200 -
+2023-11-03 11:29:58,003 [INFO] [_internal.py:122]:  * Running on la ki  (Press CTRL+C to quit)
+2023-11-03 11:30:49,571 [INFO] [_internal.py:122]:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2023-11-03 11:33:08,250 [INFO] [_internal.py:122]:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2023-11-03 11:35:40,041 [INFO] [_internal.py:122]:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2023-11-03 11:36:16,416 [INFO] [_internal.py:122]:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2023-11-03 12:01:13,168 [INFO] [_internal.py:96]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-11-03 12:01:13,168 [INFO] [_internal.py:96]: [33mPress CTRL+C to quit[0m
+2023-11-03 12:01:19,284 [INFO] [test_pad.py:37]: inside the presentation attack detection
+2023-11-03 12:01:19,371 [ERROR] [app.py:825]: Exception on /passive_liveliness [POST]
+Traceback (most recent call last):
+  File "E:\Bluebricks_projects\Passive_liveliness\venv\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\Bluebricks_projects\Passive_liveliness\venv\lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\Bluebricks_projects\Passive_liveliness\venv\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\Bluebricks_projects\Passive_liveliness\venv\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "E:\Bluebricks_projects\Passive_liveliness\main.py", line 43, in passive_liveliness
+    test(image_path, "./resources/anti_spoof_models", 0))
+  File "E:\Bluebricks_projects\Passive_liveliness\test_pad.py", line 48, in test
+    rgb_im.save(save_path)
+  File "E:\Bluebricks_projects\Passive_liveliness\venv\lib\site-packages\PIL\Image.py", line 2435, in save
+    fp = builtins.open(filename, "w+b")
+FileNotFoundError: [Errno 2] No such file or directory: 'images\\test_maskY9AYHR.jpg'
+2023-11-03 12:01:19,377 [INFO] [_internal.py:96]: 127.0.0.1 - - [03/Nov/2023 12:01:19] "[35m[1mPOST /passive_liveliness HTTP/1.1[0m" 500 -
+2023-11-03 12:02:15,123 [INFO] [test_pad.py:37]: inside the presentation attack detection
+2023-11-03 12:02:15,219 [ERROR] [app.py:825]: Exception on /passive_liveliness [POST]
+Traceback (most recent call last):
+  File "E:\Bluebricks_projects\Passive_liveliness\venv\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\Bluebricks_projects\Passive_liveliness\venv\lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\Bluebricks_projects\Passive_liveliness\venv\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\Bluebricks_projects\Passive_liveliness\venv\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "E:\Bluebricks_projects\Passive_liveliness\main.py", line 43, in passive_liveliness
+    test(image_path, "./resources/anti_spoof_models", 0))
+  File "E:\Bluebricks_projects\Passive_liveliness\test_pad.py", line 48, in test
+    rgb_im.save(save_path)
+  File "E:\Bluebricks_projects\Passive_liveliness\venv\lib\site-packages\PIL\Image.py", line 2435, in save
+    fp = builtins.open(filename, "w+b")
+FileNotFoundError: [Errno 2] No such file or directory: 'images\\test_maskOD6UI9.jpg'
+2023-11-03 12:02:15,222 [INFO] [_internal.py:96]: 127.0.0.1 - - [03/Nov/2023 12:02:15] "[35m[1mPOST /passive_liveliness HTTP/1.1[0m" 500 -
+2023-11-03 12:02:33,905 [INFO] [test_pad.py:37]: inside the presentation attack detection
+2023-11-03 12:02:33,937 [INFO] [test_pad.py:58]: height_width_ratio = 0.8569725864123957
+2023-11-03 12:02:33,937 [INFO] [test_pad.py:26]: height is 719
+2023-11-03 12:02:33,937 [INFO] [test_pad.py:27]: width is 839
+2023-11-03 12:02:33,937 [INFO] [test_pad.py:29]: Image is not appropriate!!! Height Width should be 4/3.
+2023-11-03 12:02:33,962 [INFO] [test_pad.py:127]: w_input = 80, h_input = 80
+2023-11-03 12:02:34,059 [INFO] [test_pad.py:127]: w_input = 80, h_input = 80
+2023-11-03 12:02:34,208 [INFO] [test_pad.py:144]: prediction is [[1.84950245e-05 1.99986637e+00 1.15173025e-04]]
+2023-11-03 12:02:34,208 [INFO] [test_pad.py:156]: value is 99.99331831932068
+2023-11-03 12:02:34,208 [INFO] [test_pad.py:157]: label is 1
+2023-11-03 12:02:34,208 [INFO] [test_pad.py:161]: Image 'image_folder\WhatsApp_Image_2023-11-01_at_12IVTO1I.jpg' is Real Face. Score: 99.99.
+2023-11-03 12:02:34,208 [INFO] [test_pad.py:172]: Prediction cost 0.24 s
+2023-11-03 12:02:34,208 [INFO] [test_pad.py:193]: warning
+2023-11-03 12:02:34,425 [INFO] [test_pad.py:200]: ---------------------------passive--------------------------
+2023-11-03 12:02:34,434 [INFO] [main.py:61]: passive liveliness check is done
+2023-11-03 12:02:34,434 [INFO] [_internal.py:96]: 127.0.0.1 - - [03/Nov/2023 12:02:34] "POST /passive_liveliness HTTP/1.1" 200 -
+2023-11-03 12:05:50,765 [INFO] [test_pad.py:37]: inside the presentation attack detection
+2023-11-03 12:05:50,821 [ERROR] [app.py:825]: Exception on /passive_liveliness [POST]
+Traceback (most recent call last):
+  File "E:\Bluebricks_projects\Passive_liveliness\venv\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\Bluebricks_projects\Passive_liveliness\venv\lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\Bluebricks_projects\Passive_liveliness\venv\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\Bluebricks_projects\Passive_liveliness\venv\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "E:\Bluebricks_projects\Passive_liveliness\main.py", line 43, in passive_liveliness
+    test(image_path, "./resources/anti_spoof_models", 0))
+  File "E:\Bluebricks_projects\Passive_liveliness\test_pad.py", line 48, in test
+    rgb_im.save(save_path)
+  File "E:\Bluebricks_projects\Passive_liveliness\venv\lib\site-packages\PIL\Image.py", line 2435, in save
+    fp = builtins.open(filename, "w+b")
+FileNotFoundError: [Errno 2] No such file or directory: 'images\\test_mask3A08XP.jpg'
+2023-11-03 12:05:50,822 [INFO] [_internal.py:96]: 127.0.0.1 - - [03/Nov/2023 12:05:50] "[35m[1mPOST /passive_liveliness HTTP/1.1[0m" 500 -
+2023-11-03 12:06:42,402 [INFO] [_internal.py:96]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-11-03 12:06:42,402 [INFO] [_internal.py:96]: [33mPress CTRL+C to quit[0m
+2023-11-03 12:06:44,117 [INFO] [test_pad.py:37]: inside the presentation attack detection
+2023-11-03 12:06:44,169 [ERROR] [app.py:825]: Exception on /passive_liveliness [POST]
+Traceback (most recent call last):
+  File "E:\Bluebricks_projects\Passive_liveliness\venv\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\Bluebricks_projects\Passive_liveliness\venv\lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\Bluebricks_projects\Passive_liveliness\venv\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\Bluebricks_projects\Passive_liveliness\venv\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "E:\Bluebricks_projects\Passive_liveliness\main.py", line 43, in passive_liveliness
+    test(image_path, "./resources/anti_spoof_models", 0))
+  File "E:\Bluebricks_projects\Passive_liveliness\test_pad.py", line 48, in test
+    rgb_im.save(save_path)
+  File "E:\Bluebricks_projects\Passive_liveliness\venv\lib\site-packages\PIL\Image.py", line 2435, in save
+    fp = builtins.open(filename, "w+b")
+FileNotFoundError: [Errno 2] No such file or directory: 'images\\test_mask27U3Y4.jpg'
+2023-11-03 12:06:44,172 [INFO] [_internal.py:96]: 127.0.0.1 - - [03/Nov/2023 12:06:44] "[35m[1mPOST /passive_liveliness HTTP/1.1[0m" 500 -
+2023-11-03 12:07:17,679 [INFO] [test_pad.py:37]: inside the presentation attack detection
+2023-11-03 12:07:17,709 [INFO] [test_pad.py:58]: height_width_ratio = 0.6118677042801557
+2023-11-03 12:07:17,709 [INFO] [test_pad.py:26]: height is 629
+2023-11-03 12:07:17,709 [INFO] [test_pad.py:27]: width is 1028
+2023-11-03 12:07:17,709 [INFO] [test_pad.py:29]: Image is not appropriate!!! Height Width should be 4/3.
+2023-11-03 12:07:17,764 [INFO] [test_pad.py:127]: w_input = 80, h_input = 80
+2023-11-03 12:07:17,884 [INFO] [test_pad.py:127]: w_input = 80, h_input = 80
+2023-11-03 12:07:17,977 [INFO] [test_pad.py:144]: prediction is [[3.82699013e-05 1.99994206e+00 1.96098686e-05]]
+2023-11-03 12:07:17,978 [INFO] [test_pad.py:156]: value is 99.99710321426392
+2023-11-03 12:07:17,978 [INFO] [test_pad.py:157]: label is 1
+2023-11-03 12:07:17,978 [INFO] [test_pad.py:161]: Image 'image_folder\WhatsApp_Image_2023-11-01_at_12I9E7IM.jpg' is Real Face. Score: 100.00.
+2023-11-03 12:07:17,978 [INFO] [test_pad.py:172]: Prediction cost 0.21 s
+2023-11-03 12:07:17,978 [INFO] [test_pad.py:193]: warning
+2023-11-03 12:07:18,095 [INFO] [test_pad.py:200]: ---------------------------passive--------------------------
+2023-11-03 12:07:18,097 [INFO] [main.py:61]: passive liveliness check is done
+2023-11-03 12:07:18,098 [INFO] [_internal.py:96]: 127.0.0.1 - - [03/Nov/2023 12:07:18] "POST /passive_liveliness HTTP/1.1" 200 -
+2023-11-03 12:09:37,060 [INFO] [_internal.py:96]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-11-03 12:09:37,061 [INFO] [_internal.py:96]: [33mPress CTRL+C to quit[0m
+2023-11-03 12:09:44,518 [INFO] [test_pad.py:37]: inside the presentation attack detection
+2023-11-03 12:09:44,634 [INFO] [test_pad.py:58]: height_width_ratio = 0.8569725864123957
+2023-11-03 12:09:44,634 [INFO] [test_pad.py:26]: height is 719
+2023-11-03 12:09:44,635 [INFO] [test_pad.py:27]: width is 839
+2023-11-03 12:09:44,635 [INFO] [test_pad.py:29]: Image is not appropriate!!! Height Width should be 4/3.
+2023-11-03 12:09:44,671 [INFO] [test_pad.py:127]: w_input = 80, h_input = 80
+2023-11-03 12:09:44,795 [INFO] [test_pad.py:127]: w_input = 80, h_input = 80
+2023-11-03 12:09:44,920 [INFO] [test_pad.py:144]: prediction is [[2.7701803e-05 1.9997552e+00 2.1722943e-04]]
+2023-11-03 12:09:44,921 [INFO] [test_pad.py:156]: value is 99.98776018619537
+2023-11-03 12:09:44,921 [INFO] [test_pad.py:157]: label is 1
+2023-11-03 12:09:44,921 [INFO] [test_pad.py:161]: Image 'image_folder\test_maskORWBST.jpg' is Real Face. Score: 99.99.
+2023-11-03 12:09:44,921 [INFO] [test_pad.py:172]: Prediction cost 0.25 s
+2023-11-03 12:09:44,921 [INFO] [test_pad.py:193]: warning
+2023-11-03 12:09:45,097 [INFO] [test_pad.py:200]: ---------------------------passive--------------------------
+2023-11-03 12:09:45,100 [INFO] [main.py:61]: passive liveliness check is done
+2023-11-03 12:09:45,103 [INFO] [_internal.py:96]: 127.0.0.1 - - [03/Nov/2023 12:09:45] "POST /passive_liveliness HTTP/1.1" 200 -
+2023-11-03 12:10:03,680 [INFO] [test_pad.py:37]: inside the presentation attack detection
+2023-11-03 12:10:03,731 [INFO] [test_pad.py:58]: height_width_ratio = 0.8569725864123957
+2023-11-03 12:10:03,731 [INFO] [test_pad.py:26]: height is 719
+2023-11-03 12:10:03,731 [INFO] [test_pad.py:27]: width is 839
+2023-11-03 12:10:03,731 [INFO] [test_pad.py:29]: Image is not appropriate!!! Height Width should be 4/3.
+2023-11-03 12:10:03,766 [INFO] [test_pad.py:127]: w_input = 80, h_input = 80
+2023-11-03 12:10:03,909 [INFO] [test_pad.py:127]: w_input = 80, h_input = 80
+2023-11-03 12:10:04,028 [INFO] [test_pad.py:144]: prediction is [[1.84950245e-05 1.99986637e+00 1.15173025e-04]]
+2023-11-03 12:10:04,028 [INFO] [test_pad.py:156]: value is 99.99331831932068
+2023-11-03 12:10:04,029 [INFO] [test_pad.py:157]: label is 1
+2023-11-03 12:10:04,029 [INFO] [test_pad.py:161]: Image 'image_folder\WhatsApp_Image_2023-11-01_at_12H5IS3Y.jpg' is Real Face. Score: 99.99.
+2023-11-03 12:10:04,029 [INFO] [test_pad.py:172]: Prediction cost 0.26 s
+2023-11-03 12:10:04,029 [INFO] [test_pad.py:193]: warning
+2023-11-03 12:10:04,196 [INFO] [test_pad.py:200]: ---------------------------passive--------------------------
+2023-11-03 12:10:04,200 [INFO] [main.py:61]: passive liveliness check is done
+2023-11-03 12:10:04,202 [INFO] [_internal.py:96]: 127.0.0.1 - - [03/Nov/2023 12:10:04] "POST /passive_liveliness HTTP/1.1" 200 -
+2023-11-03 12:10:12,457 [INFO] [test_pad.py:37]: inside the presentation attack detection
+2023-11-03 12:10:12,609 [INFO] [test_pad.py:58]: height_width_ratio = 0.7174721189591078
+2023-11-03 12:10:12,609 [INFO] [test_pad.py:26]: height is 772
+2023-11-03 12:10:12,609 [INFO] [test_pad.py:27]: width is 1076
+2023-11-03 12:10:12,609 [INFO] [test_pad.py:29]: Image is not appropriate!!! Height Width should be 4/3.
+2023-11-03 12:10:12,668 [INFO] [test_pad.py:127]: w_input = 80, h_input = 80
+2023-11-03 12:10:12,833 [INFO] [test_pad.py:127]: w_input = 80, h_input = 80
+2023-11-03 12:10:12,973 [INFO] [test_pad.py:144]: prediction is [[1.40974486 0.05414235 0.53611276]]
+2023-11-03 12:10:12,974 [INFO] [test_pad.py:156]: value is 70.48724293708801
+2023-11-03 12:10:12,974 [INFO] [test_pad.py:157]: label is 0
+2023-11-03 12:10:12,974 [INFO] [test_pad.py:168]: Image 'image_folder\test_mask6DGK2Q.jpg' is Fake Face. Score: 70.49.
+2023-11-03 12:10:12,974 [INFO] [test_pad.py:172]: Prediction cost 0.30 s
+2023-11-03 12:10:12,974 [INFO] [test_pad.py:193]: warning
+2023-11-03 12:10:13,154 [INFO] [test_pad.py:200]: ---------------------------passive--------------------------
+2023-11-03 12:10:13,160 [INFO] [main.py:61]: passive liveliness check is done
+2023-11-03 12:10:13,162 [INFO] [_internal.py:96]: 127.0.0.1 - - [03/Nov/2023 12:10:13] "POST /passive_liveliness HTTP/1.1" 200 -
+2024-01-25 11:36:25,211 [INFO] [_internal.py:96]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-01-25 11:36:25,212 [INFO] [_internal.py:96]: [33mPress CTRL+C to quit[0m
+2024-01-25 11:37:42,536 [INFO] [_internal.py:96]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-01-25 11:37:42,536 [INFO] [_internal.py:96]: [33mPress CTRL+C to quit[0m
+2024-01-25 11:37:54,880 [ERROR] [app.py:828]: Exception on /passive_liveliness [POST]
+Traceback (most recent call last):
+  File "/home/aditya/Documents/Projects/passive_liveliness/venv/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/aditya/Documents/Projects/passive_liveliness/venv/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/aditya/Documents/Projects/passive_liveliness/venv/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/aditya/Documents/Projects/passive_liveliness/venv/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/aditya/Documents/Projects/passive_liveliness/main.py", line 39, in passive_liveliness
+    document.save(os.path.join(Temp_Dir, filename_new_name))
+  File "/home/aditya/Documents/Projects/passive_liveliness/venv/lib/python3.10/site-packages/werkzeug/datastructures/file_storage.py", line 125, in save
+    dst = open(dst, "wb")
+FileNotFoundError: [Errno 2] No such file or directory: 'image_folder/A1J29Z.'
+2024-01-25 11:37:54,881 [INFO] [_internal.py:96]: 127.0.0.1 - - [25/Jan/2024 11:37:54] "[35m[1mPOST /passive_liveliness HTTP/1.1[0m" 500 -
+2024-01-25 11:39:43,613 [ERROR] [app.py:828]: Exception on /passive_liveliness [POST]
+Traceback (most recent call last):
+  File "/home/aditya/Documents/Projects/passive_liveliness/venv/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/aditya/Documents/Projects/passive_liveliness/venv/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/aditya/Documents/Projects/passive_liveliness/venv/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/aditya/Documents/Projects/passive_liveliness/venv/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/aditya/Documents/Projects/passive_liveliness/main.py", line 39, in passive_liveliness
+    document.save(os.path.join(Temp_Dir, filename_new_name))
+  File "/home/aditya/Documents/Projects/passive_liveliness/venv/lib/python3.10/site-packages/werkzeug/datastructures/file_storage.py", line 125, in save
+    dst = open(dst, "wb")
+FileNotFoundError: [Errno 2] No such file or directory: 'image_folder/selfiePWY9ZM.jpeg'
+2024-01-25 11:39:43,614 [INFO] [_internal.py:96]: 127.0.0.1 - - [25/Jan/2024 11:39:43] "[35m[1mPOST /passive_liveliness HTTP/1.1[0m" 500 -
+2024-01-25 11:39:44,782 [ERROR] [app.py:828]: Exception on /passive_liveliness [POST]
+Traceback (most recent call last):
+  File "/home/aditya/Documents/Projects/passive_liveliness/venv/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/aditya/Documents/Projects/passive_liveliness/venv/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/aditya/Documents/Projects/passive_liveliness/venv/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/aditya/Documents/Projects/passive_liveliness/venv/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/aditya/Documents/Projects/passive_liveliness/main.py", line 39, in passive_liveliness
+    document.save(os.path.join(Temp_Dir, filename_new_name))
+  File "/home/aditya/Documents/Projects/passive_liveliness/venv/lib/python3.10/site-packages/werkzeug/datastructures/file_storage.py", line 125, in save
+    dst = open(dst, "wb")
+FileNotFoundError: [Errno 2] No such file or directory: 'image_folder/selfie411F8O.jpeg'
+2024-01-25 11:39:44,783 [INFO] [_internal.py:96]: 127.0.0.1 - - [25/Jan/2024 11:39:44] "[35m[1mPOST /passive_liveliness HTTP/1.1[0m" 500 -
+2024-01-25 11:39:49,543 [ERROR] [app.py:828]: Exception on /passive_liveliness [POST]
+Traceback (most recent call last):
+  File "/home/aditya/Documents/Projects/passive_liveliness/venv/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/aditya/Documents/Projects/passive_liveliness/venv/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/aditya/Documents/Projects/passive_liveliness/venv/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/aditya/Documents/Projects/passive_liveliness/venv/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/aditya/Documents/Projects/passive_liveliness/main.py", line 39, in passive_liveliness
+    document.save(os.path.join(Temp_Dir, filename_new_name))
+  File "/home/aditya/Documents/Projects/passive_liveliness/venv/lib/python3.10/site-packages/werkzeug/datastructures/file_storage.py", line 125, in save
+    dst = open(dst, "wb")
+FileNotFoundError: [Errno 2] No such file or directory: 'image_folder/selfieA60AYQ.jpeg'
+2024-01-25 11:39:49,544 [INFO] [_internal.py:96]: 127.0.0.1 - - [25/Jan/2024 11:39:49] "[35m[1mPOST /passive_liveliness HTTP/1.1[0m" 500 -
+2024-01-25 11:39:59,194 [ERROR] [app.py:828]: Exception on /passive_liveliness [POST]
+Traceback (most recent call last):
+  File "/home/aditya/Documents/Projects/passive_liveliness/venv/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/aditya/Documents/Projects/passive_liveliness/venv/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/aditya/Documents/Projects/passive_liveliness/venv/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/aditya/Documents/Projects/passive_liveliness/venv/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/aditya/Documents/Projects/passive_liveliness/main.py", line 39, in passive_liveliness
+    document.save(os.path.join(Temp_Dir, filename_new_name))
+  File "/home/aditya/Documents/Projects/passive_liveliness/venv/lib/python3.10/site-packages/werkzeug/datastructures/file_storage.py", line 125, in save
+    dst = open(dst, "wb")
+FileNotFoundError: [Errno 2] No such file or directory: 'image_folder/selfieKHF3OI.jpeg'
+2024-01-25 11:39:59,195 [INFO] [_internal.py:96]: 127.0.0.1 - - [25/Jan/2024 11:39:59] "[35m[1mPOST /passive_liveliness HTTP/1.1[0m" 500 -
+2024-01-25 11:42:09,908 [INFO] [_internal.py:96]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-01-25 11:42:09,908 [INFO] [_internal.py:96]: [33mPress CTRL+C to quit[0m
+2024-01-25 11:43:21,911 [INFO] [test_pad.py:37]: inside the presentation attack detection
+2024-01-25 11:43:22,009 [INFO] [test_pad.py:58]: height_width_ratio = 1.0
+2024-01-25 11:43:22,010 [INFO] [test_pad.py:26]: height is 1600
+2024-01-25 11:43:22,010 [INFO] [test_pad.py:27]: width is 1600
+2024-01-25 11:43:22,010 [INFO] [test_pad.py:29]: Image is not appropriate!!! Height Width should be 4/3.
+2024-01-25 11:43:22,040 [INFO] [test_pad.py:127]: w_input = 80, h_input = 80
+2024-01-25 11:43:22,717 [INFO] [test_pad.py:127]: w_input = 80, h_input = 80
+2024-01-25 11:43:22,891 [INFO] [test_pad.py:144]: prediction is [[0.30024205 0.00556876 1.69418913]]
+2024-01-25 11:43:22,892 [INFO] [test_pad.py:156]: value is 84.70945656299591
+2024-01-25 11:43:22,892 [INFO] [test_pad.py:157]: label is 2
+2024-01-25 11:43:22,892 [INFO] [test_pad.py:168]: Image 'image_folder/selfieSBY0YA.jpeg' is Fake Face. Score: 84.71.
+2024-01-25 11:43:22,892 [INFO] [test_pad.py:172]: Prediction cost 0.85 s
+2024-01-25 11:43:22,893 [INFO] [test_pad.py:193]: warning
+2024-01-25 11:43:23,067 [INFO] [test_pad.py:200]: ---------------------------passive--------------------------
+2024-01-25 11:43:23,070 [INFO] [main.py:62]: passive liveliness check is done
+2024-01-25 11:43:23,071 [INFO] [_internal.py:96]: 127.0.0.1 - - [25/Jan/2024 11:43:23] "POST /passive_liveliness HTTP/1.1" 200 -
+2024-01-25 12:07:45,121 [INFO] [test_pad.py:37]: inside the presentation attack detection
+2024-01-25 12:07:45,184 [INFO] [test_pad.py:58]: height_width_ratio = 1.0
+2024-01-25 12:07:45,184 [INFO] [test_pad.py:26]: height is 1600
+2024-01-25 12:07:45,184 [INFO] [test_pad.py:27]: width is 1600
+2024-01-25 12:07:45,184 [INFO] [test_pad.py:29]: Image is not appropriate!!! Height Width should be 4/3.
+2024-01-25 12:07:45,212 [INFO] [test_pad.py:127]: w_input = 80, h_input = 80
+2024-01-25 12:07:45,305 [INFO] [test_pad.py:127]: w_input = 80, h_input = 80
+2024-01-25 12:07:45,387 [INFO] [test_pad.py:144]: prediction is [[0.30024205 0.00556876 1.69418913]]
+2024-01-25 12:07:45,388 [INFO] [test_pad.py:156]: value is 84.70945656299591
+2024-01-25 12:07:45,388 [INFO] [test_pad.py:157]: label is 2
+2024-01-25 12:07:45,388 [INFO] [test_pad.py:168]: Image 'image_folder/selfieX0ZYDK.jpeg' is Fake Face. Score: 84.71.
+2024-01-25 12:07:45,388 [INFO] [test_pad.py:172]: Prediction cost 0.17 s
+2024-01-25 12:07:45,388 [INFO] [test_pad.py:193]: warning
+2024-01-25 12:07:45,514 [INFO] [test_pad.py:200]: ---------------------------passive--------------------------
+2024-01-25 12:07:45,516 [INFO] [main.py:62]: passive liveliness check is done
+2024-01-25 12:07:45,516 [INFO] [_internal.py:96]: 127.0.0.1 - - [25/Jan/2024 12:07:45] "POST /passive_liveliness HTTP/1.1" 200 -
+2024-01-25 12:08:12,427 [INFO] [_internal.py:96]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-01-25 12:08:12,427 [INFO] [_internal.py:96]: [33mPress CTRL+C to quit[0m
+2024-01-25 12:08:14,900 [INFO] [test_pad.py:37]: inside the presentation attack detection
+2024-01-25 12:08:14,962 [INFO] [test_pad.py:58]: height_width_ratio = 1.0
+2024-01-25 12:08:14,962 [INFO] [test_pad.py:26]: height is 1600
+2024-01-25 12:08:14,962 [INFO] [test_pad.py:27]: width is 1600
+2024-01-25 12:08:14,962 [INFO] [test_pad.py:29]: Image is not appropriate!!! Height Width should be 4/3.
+2024-01-25 12:08:14,981 [INFO] [test_pad.py:127]: w_input = 80, h_input = 80
+2024-01-25 12:08:15,478 [INFO] [test_pad.py:127]: w_input = 80, h_input = 80
+2024-01-25 12:08:15,686 [INFO] [test_pad.py:144]: prediction is [[0.30024205 0.00556876 1.69418913]]
+2024-01-25 12:08:15,687 [INFO] [test_pad.py:156]: value is 84.70945656299591
+2024-01-25 12:08:15,687 [INFO] [test_pad.py:157]: label is 2
+2024-01-25 12:08:15,687 [INFO] [test_pad.py:168]: Image 'image_folder/selfieUMNKFK.jpeg' is Fake Face. Score: 84.71.
+2024-01-25 12:08:15,687 [INFO] [test_pad.py:172]: Prediction cost 0.71 s
+2024-01-25 12:08:15,687 [INFO] [test_pad.py:193]: warning
+2024-01-25 12:08:15,803 [INFO] [test_pad.py:200]: ---------------------------passive--------------------------
+2024-01-25 12:08:15,804 [INFO] [main.py:62]: passive liveliness check is done
+2024-01-25 12:08:15,805 [INFO] [_internal.py:96]: 127.0.0.1 - - [25/Jan/2024 12:08:15] "POST /passive_liveliness HTTP/1.1" 200 -
+2024-01-25 12:11:16,465 [INFO] [test_pad.py:37]: inside the presentation attack detection
+2024-01-25 12:11:16,554 [INFO] [test_pad.py:58]: height_width_ratio = 1.5814977973568283
+2024-01-25 12:11:16,554 [INFO] [test_pad.py:26]: height is 718
+2024-01-25 12:11:16,554 [INFO] [test_pad.py:27]: width is 454
+2024-01-25 12:11:16,555 [INFO] [test_pad.py:29]: Image is not appropriate!!! Height Width should be 4/3.
+2024-01-25 12:11:16,569 [INFO] [test_pad.py:127]: w_input = 80, h_input = 80
+2024-01-25 12:11:16,714 [INFO] [test_pad.py:127]: w_input = 80, h_input = 80
+2024-01-25 12:11:16,876 [INFO] [test_pad.py:144]: prediction is [[2.71678698e-04 1.99951875e+00 2.09609556e-04]]
+2024-01-25 12:11:16,877 [INFO] [test_pad.py:156]: value is 99.97593760490417
+2024-01-25 12:11:16,877 [INFO] [test_pad.py:157]: label is 1
+2024-01-25 12:11:16,877 [INFO] [test_pad.py:161]: Image 'image_folder/test_maskEKMNZA.jpg' is Real Face. Score: 99.98.
+2024-01-25 12:11:16,877 [INFO] [test_pad.py:172]: Prediction cost 0.31 s
+2024-01-25 12:11:16,878 [INFO] [test_pad.py:193]: warning
+2024-01-25 12:11:17,000 [INFO] [test_pad.py:200]: ---------------------------passive--------------------------
+2024-01-25 12:11:17,002 [INFO] [main.py:62]: passive liveliness check is done
+2024-01-25 12:11:17,003 [INFO] [_internal.py:96]: 127.0.0.1 - - [25/Jan/2024 12:11:17] "POST /passive_liveliness HTTP/1.1" 200 -
+2024-01-25 12:13:40,928 [INFO] [test_pad.py:37]: inside the presentation attack detection
+2024-01-25 12:13:40,965 [INFO] [test_pad.py:58]: height_width_ratio = 0.71267252195734
+2024-01-25 12:13:40,965 [INFO] [test_pad.py:26]: height is 568
+2024-01-25 12:13:40,965 [INFO] [test_pad.py:27]: width is 797
+2024-01-25 12:13:40,965 [INFO] [test_pad.py:29]: Image is not appropriate!!! Height Width should be 4/3.
+2024-01-25 12:13:40,977 [INFO] [test_pad.py:127]: w_input = 80, h_input = 80
+2024-01-25 12:13:41,092 [INFO] [test_pad.py:127]: w_input = 80, h_input = 80
+2024-01-25 12:13:41,239 [INFO] [test_pad.py:144]: prediction is [[0.03392103 1.04988655 0.91619244]]
+2024-01-25 12:13:41,239 [INFO] [test_pad.py:156]: value is 52.49432772397995
+2024-01-25 12:13:41,239 [INFO] [test_pad.py:157]: label is 1
+2024-01-25 12:13:41,239 [INFO] [test_pad.py:161]: Image 'image_folder/test_mask1MLLHE.jpg' is Real Face. Score: 52.49.
+2024-01-25 12:13:41,240 [INFO] [test_pad.py:172]: Prediction cost 0.26 s
+2024-01-25 12:13:41,240 [INFO] [test_pad.py:193]: warning
+2024-01-25 12:13:41,347 [INFO] [test_pad.py:200]: ---------------------------passive--------------------------
+2024-01-25 12:13:41,348 [INFO] [main.py:62]: passive liveliness check is done
+2024-01-25 12:13:41,349 [INFO] [_internal.py:96]: 127.0.0.1 - - [25/Jan/2024 12:13:41] "POST /passive_liveliness HTTP/1.1" 200 -
+2024-01-25 12:14:09,810 [INFO] [test_pad.py:37]: inside the presentation attack detection
+2024-01-25 12:14:09,835 [INFO] [test_pad.py:58]: height_width_ratio = 1.2207792207792207
+2024-01-25 12:14:09,835 [INFO] [test_pad.py:26]: height is 470
+2024-01-25 12:14:09,835 [INFO] [test_pad.py:27]: width is 385
+2024-01-25 12:14:09,835 [INFO] [test_pad.py:29]: Image is not appropriate!!! Height Width should be 4/3.
+2024-01-25 12:14:09,847 [INFO] [test_pad.py:127]: w_input = 80, h_input = 80
+2024-01-25 12:14:09,967 [INFO] [test_pad.py:127]: w_input = 80, h_input = 80
+2024-01-25 12:14:10,107 [INFO] [test_pad.py:144]: prediction is [[0.00805472 1.98478079 0.00716454]]
+2024-01-25 12:14:10,108 [INFO] [test_pad.py:156]: value is 99.23903942108154
+2024-01-25 12:14:10,108 [INFO] [test_pad.py:157]: label is 1
+2024-01-25 12:14:10,108 [INFO] [test_pad.py:161]: Image 'image_folder/test_maskGYJXWX.jpg' is Real Face. Score: 99.24.
+2024-01-25 12:14:10,108 [INFO] [test_pad.py:172]: Prediction cost 0.26 s
+2024-01-25 12:14:10,108 [INFO] [test_pad.py:193]: warning
+2024-01-25 12:14:10,226 [INFO] [test_pad.py:200]: ---------------------------passive--------------------------
+2024-01-25 12:14:10,229 [INFO] [main.py:62]: passive liveliness check is done
+2024-01-25 12:14:10,231 [INFO] [_internal.py:96]: 127.0.0.1 - - [25/Jan/2024 12:14:10] "POST /passive_liveliness HTTP/1.1" 200 -
+2024-01-25 12:17:46,474 [INFO] [test_pad.py:37]: inside the presentation attack detection
+2024-01-25 12:17:46,513 [INFO] [test_pad.py:58]: height_width_ratio = 1.0666666666666667
+2024-01-25 12:17:46,513 [INFO] [test_pad.py:26]: height is 768
+2024-01-25 12:17:46,513 [INFO] [test_pad.py:27]: width is 720
+2024-01-25 12:17:46,514 [INFO] [test_pad.py:29]: Image is not appropriate!!! Height Width should be 4/3.
+2024-01-25 12:17:46,525 [INFO] [test_pad.py:127]: w_input = 80, h_input = 80
+2024-01-25 12:17:46,640 [INFO] [test_pad.py:127]: w_input = 80, h_input = 80
+2024-01-25 12:17:46,778 [INFO] [test_pad.py:144]: prediction is [[0.00955139 1.96268815 0.02776047]]
+2024-01-25 12:17:46,778 [INFO] [test_pad.py:156]: value is 98.1344074010849
+2024-01-25 12:17:46,778 [INFO] [test_pad.py:157]: label is 1
+2024-01-25 12:17:46,779 [INFO] [test_pad.py:161]: Image 'image_folder/test_maskT0CFII.jpg' is Real Face. Score: 98.13.
+2024-01-25 12:17:46,779 [INFO] [test_pad.py:172]: Prediction cost 0.25 s
+2024-01-25 12:17:46,779 [INFO] [test_pad.py:193]: warning
+2024-01-25 12:17:46,895 [INFO] [test_pad.py:200]: ---------------------------passive--------------------------
+2024-01-25 12:17:46,896 [INFO] [main.py:62]: passive liveliness check is done
+2024-01-25 12:17:46,897 [INFO] [_internal.py:96]: 127.0.0.1 - - [25/Jan/2024 12:17:46] "POST /passive_liveliness HTTP/1.1" 200 -
+2024-01-25 12:19:06,240 [INFO] [test_pad.py:37]: inside the presentation attack detection
+2024-01-25 12:19:06,251 [INFO] [test_pad.py:58]: height_width_ratio = 0.7128378378378378
+2024-01-25 12:19:06,252 [INFO] [test_pad.py:26]: height is 422
+2024-01-25 12:19:06,252 [INFO] [test_pad.py:27]: width is 592
+2024-01-25 12:19:06,252 [INFO] [test_pad.py:29]: Image is not appropriate!!! Height Width should be 4/3.
+2024-01-25 12:19:06,264 [INFO] [test_pad.py:127]: w_input = 80, h_input = 80
+2024-01-25 12:19:06,387 [INFO] [test_pad.py:127]: w_input = 80, h_input = 80
+2024-01-25 12:19:06,528 [INFO] [test_pad.py:144]: prediction is [[9.63533836e-07 1.99995971e+00 3.93144824e-05]]
+2024-01-25 12:19:06,529 [INFO] [test_pad.py:156]: value is 99.99798536300659
+2024-01-25 12:19:06,529 [INFO] [test_pad.py:157]: label is 1
+2024-01-25 12:19:06,529 [INFO] [test_pad.py:161]: Image 'image_folder/img33-removebg-previewVYK4DL.jpg' is Real Face. Score: 100.00.
+2024-01-25 12:19:06,529 [INFO] [test_pad.py:172]: Prediction cost 0.26 s
+2024-01-25 12:19:06,529 [INFO] [test_pad.py:193]: warning
+2024-01-25 12:19:06,637 [INFO] [test_pad.py:200]: ---------------------------passive--------------------------
+2024-01-25 12:19:06,639 [INFO] [main.py:62]: passive liveliness check is done
+2024-01-25 12:19:06,640 [INFO] [_internal.py:96]: 127.0.0.1 - - [25/Jan/2024 12:19:06] "POST /passive_liveliness HTTP/1.1" 200 -
+2024-01-25 12:19:57,017 [INFO] [test_pad.py:37]: inside the presentation attack detection
+2024-01-25 12:19:57,062 [INFO] [test_pad.py:58]: height_width_ratio = 0.71267252195734
+2024-01-25 12:19:57,062 [INFO] [test_pad.py:26]: height is 568
+2024-01-25 12:19:57,062 [INFO] [test_pad.py:27]: width is 797
+2024-01-25 12:19:57,062 [INFO] [test_pad.py:29]: Image is not appropriate!!! Height Width should be 4/3.
+2024-01-25 12:19:57,074 [INFO] [test_pad.py:127]: w_input = 80, h_input = 80
+2024-01-25 12:19:57,209 [INFO] [test_pad.py:127]: w_input = 80, h_input = 80
+2024-01-25 12:19:57,373 [INFO] [test_pad.py:144]: prediction is [[0.03392103 1.04988655 0.91619244]]
+2024-01-25 12:19:57,373 [INFO] [test_pad.py:156]: value is 52.49432772397995
+2024-01-25 12:19:57,373 [INFO] [test_pad.py:157]: label is 1
+2024-01-25 12:19:57,373 [INFO] [test_pad.py:161]: Image 'image_folder/test_maskXO5QB3.jpg' is Real Face. Score: 52.49.
+2024-01-25 12:19:57,374 [INFO] [test_pad.py:172]: Prediction cost 0.30 s
+2024-01-25 12:19:57,374 [INFO] [test_pad.py:193]: warning
+2024-01-25 12:19:57,493 [INFO] [test_pad.py:200]: ---------------------------passive--------------------------
+2024-01-25 12:19:57,494 [INFO] [main.py:62]: passive liveliness check is done
+2024-01-25 12:19:57,496 [INFO] [_internal.py:96]: 127.0.0.1 - - [25/Jan/2024 12:19:57] "POST /passive_liveliness HTTP/1.1" 200 -
+2024-01-25 12:20:08,184 [INFO] [test_pad.py:37]: inside the presentation attack detection
+2024-01-25 12:20:08,193 [INFO] [test_pad.py:58]: height_width_ratio = 0.7128378378378378
+2024-01-25 12:20:08,193 [INFO] [test_pad.py:26]: height is 422
+2024-01-25 12:20:08,193 [INFO] [test_pad.py:27]: width is 592
+2024-01-25 12:20:08,193 [INFO] [test_pad.py:29]: Image is not appropriate!!! Height Width should be 4/3.
+2024-01-25 12:20:08,205 [INFO] [test_pad.py:127]: w_input = 80, h_input = 80
+2024-01-25 12:20:08,341 [INFO] [test_pad.py:127]: w_input = 80, h_input = 80
+2024-01-25 12:20:08,492 [INFO] [test_pad.py:144]: prediction is [[9.63533836e-07 1.99995971e+00 3.93144824e-05]]
+2024-01-25 12:20:08,492 [INFO] [test_pad.py:156]: value is 99.99798536300659
+2024-01-25 12:20:08,493 [INFO] [test_pad.py:157]: label is 1
+2024-01-25 12:20:08,493 [INFO] [test_pad.py:161]: Image 'image_folder/img33-removebg-previewF9EDGN.jpg' is Real Face. Score: 100.00.
+2024-01-25 12:20:08,493 [INFO] [test_pad.py:172]: Prediction cost 0.29 s
+2024-01-25 12:20:08,493 [INFO] [test_pad.py:193]: warning
+2024-01-25 12:20:08,667 [INFO] [test_pad.py:200]: ---------------------------passive--------------------------
+2024-01-25 12:20:08,670 [INFO] [main.py:62]: passive liveliness check is done
+2024-01-25 12:20:08,671 [INFO] [_internal.py:96]: 127.0.0.1 - - [25/Jan/2024 12:20:08] "POST /passive_liveliness HTTP/1.1" 200 -
+2024-01-25 12:21:09,717 [INFO] [test_pad.py:37]: inside the presentation attack detection
+2024-01-25 12:21:09,727 [INFO] [test_pad.py:58]: height_width_ratio = 1.0
+2024-01-25 12:21:09,727 [INFO] [test_pad.py:26]: height is 500
+2024-01-25 12:21:09,727 [INFO] [test_pad.py:27]: width is 500
+2024-01-25 12:21:09,728 [INFO] [test_pad.py:29]: Image is not appropriate!!! Height Width should be 4/3.
+2024-01-25 12:21:09,738 [INFO] [test_pad.py:127]: w_input = 80, h_input = 80
+2024-01-25 12:21:09,855 [INFO] [test_pad.py:127]: w_input = 80, h_input = 80
+2024-01-25 12:21:09,997 [INFO] [test_pad.py:144]: prediction is [[1.24380792e-04 1.98420155e+00 1.56740807e-02]]
+2024-01-25 12:21:09,998 [INFO] [test_pad.py:156]: value is 99.21007752418518
+2024-01-25 12:21:09,998 [INFO] [test_pad.py:157]: label is 1
+2024-01-25 12:21:09,998 [INFO] [test_pad.py:161]: Image 'image_folder/selfie-removebg-previewNZAXSW.jpg' is Real Face. Score: 99.21.
+2024-01-25 12:21:09,998 [INFO] [test_pad.py:172]: Prediction cost 0.26 s
+2024-01-25 12:21:09,998 [INFO] [test_pad.py:193]: warning
+2024-01-25 12:21:10,113 [INFO] [test_pad.py:200]: ---------------------------passive--------------------------
+2024-01-25 12:21:10,114 [INFO] [main.py:62]: passive liveliness check is done
+2024-01-25 12:21:10,115 [INFO] [_internal.py:96]: 127.0.0.1 - - [25/Jan/2024 12:21:10] "POST /passive_liveliness HTTP/1.1" 200 -
+2024-01-25 12:24:34,165 [INFO] [test_pad.py:37]: inside the presentation attack detection
+2024-01-25 12:24:34,185 [INFO] [test_pad.py:58]: height_width_ratio = 0.9376623376623376
+2024-01-25 12:24:34,185 [INFO] [test_pad.py:26]: height is 361
+2024-01-25 12:24:34,185 [INFO] [test_pad.py:27]: width is 385
+2024-01-25 12:24:34,185 [INFO] [test_pad.py:29]: Image is not appropriate!!! Height Width should be 4/3.
+2024-01-25 12:24:34,207 [INFO] [test_pad.py:127]: w_input = 80, h_input = 80
+2024-01-25 12:24:34,340 [INFO] [test_pad.py:127]: w_input = 80, h_input = 80
+2024-01-25 12:24:34,504 [INFO] [test_pad.py:144]: prediction is [[1.76104826e-03 1.89376980e+00 1.04469236e-01]]
+2024-01-25 12:24:34,505 [INFO] [test_pad.py:156]: value is 94.68849003314972
+2024-01-25 12:24:34,505 [INFO] [test_pad.py:157]: label is 1
+2024-01-25 12:24:34,505 [INFO] [test_pad.py:161]: Image 'image_folder/test_maskLGE21L.jpg' is Real Face. Score: 94.69.
+2024-01-25 12:24:34,505 [INFO] [test_pad.py:172]: Prediction cost 0.30 s
+2024-01-25 12:24:34,505 [INFO] [test_pad.py:193]: warning
+2024-01-25 12:24:34,637 [INFO] [test_pad.py:200]: ---------------------------passive--------------------------
+2024-01-25 12:24:34,640 [INFO] [main.py:62]: passive liveliness check is done
+2024-01-25 12:24:34,641 [INFO] [_internal.py:96]: 127.0.0.1 - - [25/Jan/2024 12:24:34] "POST /passive_liveliness HTTP/1.1" 200 -
+2024-01-25 12:24:44,174 [INFO] [test_pad.py:37]: inside the presentation attack detection
+2024-01-25 12:24:44,196 [INFO] [test_pad.py:58]: height_width_ratio = 0.9376623376623376
+2024-01-25 12:24:44,196 [INFO] [test_pad.py:26]: height is 361
+2024-01-25 12:24:44,196 [INFO] [test_pad.py:27]: width is 385
+2024-01-25 12:24:44,196 [INFO] [test_pad.py:29]: Image is not appropriate!!! Height Width should be 4/3.
+2024-01-25 12:24:44,208 [INFO] [test_pad.py:127]: w_input = 80, h_input = 80
+2024-01-25 12:24:44,338 [INFO] [test_pad.py:127]: w_input = 80, h_input = 80
+2024-01-25 12:24:44,525 [INFO] [test_pad.py:144]: prediction is [[1.76104826e-03 1.89376980e+00 1.04469236e-01]]
+2024-01-25 12:24:44,526 [INFO] [test_pad.py:156]: value is 94.68849003314972
+2024-01-25 12:24:44,526 [INFO] [test_pad.py:157]: label is 1
+2024-01-25 12:24:44,526 [INFO] [test_pad.py:161]: Image 'image_folder/test_maskGJC434.jpg' is Real Face. Score: 94.69.
+2024-01-25 12:24:44,526 [INFO] [test_pad.py:172]: Prediction cost 0.32 s
+2024-01-25 12:24:44,526 [INFO] [test_pad.py:193]: warning
+2024-01-25 12:24:44,644 [INFO] [test_pad.py:200]: ---------------------------passive--------------------------
+2024-01-25 12:24:44,646 [INFO] [main.py:62]: passive liveliness check is done
+2024-01-25 12:24:44,647 [INFO] [_internal.py:96]: 127.0.0.1 - - [25/Jan/2024 12:24:44] "POST /passive_liveliness HTTP/1.1" 200 -
+2024-01-25 12:25:23,564 [INFO] [test_pad.py:37]: inside the presentation attack detection
+2024-01-25 12:25:23,595 [INFO] [test_pad.py:58]: height_width_ratio = 0.825974025974026
+2024-01-25 12:25:23,595 [INFO] [test_pad.py:26]: height is 318
+2024-01-25 12:25:23,595 [INFO] [test_pad.py:27]: width is 385
+2024-01-25 12:25:23,595 [INFO] [test_pad.py:29]: Image is not appropriate!!! Height Width should be 4/3.
+2024-01-25 12:25:23,607 [INFO] [test_pad.py:127]: w_input = 80, h_input = 80
+2024-01-25 12:25:23,750 [INFO] [test_pad.py:127]: w_input = 80, h_input = 80
+2024-01-25 12:25:23,906 [INFO] [test_pad.py:144]: prediction is [[0.07220636 1.32271719 0.60507642]]
+2024-01-25 12:25:23,907 [INFO] [test_pad.py:156]: value is 66.13585948944092
+2024-01-25 12:25:23,907 [INFO] [test_pad.py:157]: label is 1
+2024-01-25 12:25:23,907 [INFO] [test_pad.py:161]: Image 'image_folder/test_mask85L7S1.jpg' is Real Face. Score: 66.14.
+2024-01-25 12:25:23,907 [INFO] [test_pad.py:172]: Prediction cost 0.30 s
+2024-01-25 12:25:23,907 [INFO] [test_pad.py:193]: warning
+2024-01-25 12:25:24,023 [INFO] [test_pad.py:200]: ---------------------------passive--------------------------
+2024-01-25 12:25:24,025 [INFO] [main.py:62]: passive liveliness check is done
+2024-01-25 12:25:24,026 [INFO] [_internal.py:96]: 127.0.0.1 - - [25/Jan/2024 12:25:24] "POST /passive_liveliness HTTP/1.1" 200 -
+2024-01-25 12:25:40,826 [INFO] [test_pad.py:37]: inside the presentation attack detection
+2024-01-25 12:25:40,846 [INFO] [test_pad.py:58]: height_width_ratio = 0.9376623376623376
+2024-01-25 12:25:40,846 [INFO] [test_pad.py:26]: height is 361
+2024-01-25 12:25:40,846 [INFO] [test_pad.py:27]: width is 385
+2024-01-25 12:25:40,846 [INFO] [test_pad.py:29]: Image is not appropriate!!! Height Width should be 4/3.
+2024-01-25 12:25:40,858 [INFO] [test_pad.py:127]: w_input = 80, h_input = 80
+2024-01-25 12:25:41,000 [INFO] [test_pad.py:127]: w_input = 80, h_input = 80
+2024-01-25 12:25:41,163 [INFO] [test_pad.py:144]: prediction is [[1.76104826e-03 1.89376980e+00 1.04469236e-01]]
+2024-01-25 12:25:41,163 [INFO] [test_pad.py:156]: value is 94.68849003314972
+2024-01-25 12:25:41,164 [INFO] [test_pad.py:157]: label is 1
+2024-01-25 12:25:41,164 [INFO] [test_pad.py:161]: Image 'image_folder/test_maskHOR7FQ.jpg' is Real Face. Score: 94.69.
+2024-01-25 12:25:41,164 [INFO] [test_pad.py:172]: Prediction cost 0.30 s
+2024-01-25 12:25:41,164 [INFO] [test_pad.py:193]: warning
+2024-01-25 12:25:41,283 [INFO] [test_pad.py:200]: ---------------------------passive--------------------------
+2024-01-25 12:25:41,285 [INFO] [main.py:62]: passive liveliness check is done
+2024-01-25 12:25:41,286 [INFO] [_internal.py:96]: 127.0.0.1 - - [25/Jan/2024 12:25:41] "POST /passive_liveliness HTTP/1.1" 200 -
+2024-01-25 13:32:47,614 [INFO] [_internal.py:96]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-01-25 13:32:47,615 [INFO] [_internal.py:96]: [33mPress CTRL+C to quit[0m
+2024-01-25 13:33:06,888 [INFO] [test_pad.py:37]: inside the presentation attack detection
+2024-01-25 13:33:06,933 [ERROR] [app.py:828]: Exception on /passive_liveliness [POST]
+Traceback (most recent call last):
+  File "/home/aditya/Documents/Projects/passive_liveliness/venv/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/aditya/Documents/Projects/passive_liveliness/venv/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/aditya/Documents/Projects/passive_liveliness/venv/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/aditya/Documents/Projects/passive_liveliness/venv/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/aditya/Documents/Projects/passive_liveliness/main.py", line 46, in passive_liveliness
+    test(image_path, "./resources/anti_spoof_models", 0))
+  File "/home/aditya/Documents/Projects/passive_liveliness/test_pad.py", line 40, in test
+    image = cv2.imread(image_name)
+TypeError: Can't convert object to 'str' for 'filename'
+2024-01-25 13:33:06,935 [INFO] [_internal.py:96]: 127.0.0.1 - - [25/Jan/2024 13:33:06] "[35m[1mPOST /passive_liveliness HTTP/1.1[0m" 500 -
+2024-01-25 13:33:16,770 [INFO] [test_pad.py:37]: inside the presentation attack detection
+2024-01-25 13:33:16,777 [ERROR] [app.py:828]: Exception on /passive_liveliness [POST]
+Traceback (most recent call last):
+  File "/home/aditya/Documents/Projects/passive_liveliness/venv/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/aditya/Documents/Projects/passive_liveliness/venv/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/aditya/Documents/Projects/passive_liveliness/venv/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/aditya/Documents/Projects/passive_liveliness/venv/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/aditya/Documents/Projects/passive_liveliness/main.py", line 46, in passive_liveliness
+    test(image_path, "./resources/anti_spoof_models", 0))
+  File "/home/aditya/Documents/Projects/passive_liveliness/test_pad.py", line 40, in test
+    image = cv2.imread(image_name)
+TypeError: Can't convert object to 'str' for 'filename'
+2024-01-25 13:33:16,777 [INFO] [_internal.py:96]: 127.0.0.1 - - [25/Jan/2024 13:33:16] "[35m[1mPOST /passive_liveliness HTTP/1.1[0m" 500 -
+2024-01-25 13:33:43,426 [INFO] [_internal.py:96]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-01-25 13:33:43,427 [INFO] [_internal.py:96]: [33mPress CTRL+C to quit[0m
+2024-01-25 13:34:21,351 [INFO] [_internal.py:96]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-01-25 13:34:21,351 [INFO] [_internal.py:96]: [33mPress CTRL+C to quit[0m
+2024-01-25 13:34:25,470 [INFO] [test_pad.py:37]: inside the presentation attack detection
+2024-01-25 13:34:25,514 [ERROR] [app.py:828]: Exception on /passive_liveliness [POST]
+Traceback (most recent call last):
+  File "/home/aditya/Documents/Projects/passive_liveliness/venv/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/aditya/Documents/Projects/passive_liveliness/venv/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/aditya/Documents/Projects/passive_liveliness/venv/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/aditya/Documents/Projects/passive_liveliness/venv/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/aditya/Documents/Projects/passive_liveliness/main.py", line 46, in passive_liveliness
+    test(image_path, "./resources/anti_spoof_models", 0))
+  File "/home/aditya/Documents/Projects/passive_liveliness/test_pad.py", line 40, in test
+    image = cv2.imread(image_name)
+TypeError: Can't convert object to 'str' for 'filename'
+2024-01-25 13:34:25,516 [INFO] [_internal.py:96]: 127.0.0.1 - - [25/Jan/2024 13:34:25] "[35m[1mPOST /passive_liveliness HTTP/1.1[0m" 500 -
+2024-01-25 13:35:20,026 [INFO] [_internal.py:96]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-01-25 13:35:20,026 [INFO] [_internal.py:96]: [33mPress CTRL+C to quit[0m
+2024-01-25 13:35:25,536 [INFO] [test_pad.py:37]: inside the presentation attack detection
+2024-01-25 13:35:25,586 [ERROR] [app.py:828]: Exception on /passive_liveliness [POST]
+Traceback (most recent call last):
+  File "/home/aditya/Documents/Projects/passive_liveliness/venv/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/aditya/Documents/Projects/passive_liveliness/venv/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/aditya/Documents/Projects/passive_liveliness/venv/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/aditya/Documents/Projects/passive_liveliness/venv/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/aditya/Documents/Projects/passive_liveliness/main.py", line 48, in passive_liveliness
+    test(image_path, "./resources/anti_spoof_models", 0))
+  File "/home/aditya/Documents/Projects/passive_liveliness/test_pad.py", line 40, in test
+    image = cv2.imread(image_name)
+TypeError: Can't convert object to 'str' for 'filename'
+2024-01-25 13:35:25,591 [INFO] [_internal.py:96]: 127.0.0.1 - - [25/Jan/2024 13:35:25] "[35m[1mPOST /passive_liveliness HTTP/1.1[0m" 500 -
+2024-01-25 13:36:31,382 [INFO] [_internal.py:96]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-01-25 13:36:31,383 [INFO] [_internal.py:96]: [33mPress CTRL+C to quit[0m
+2024-01-25 13:36:37,657 [INFO] [test_pad.py:37]: inside the presentation attack detection
+2024-01-25 13:36:37,705 [ERROR] [app.py:828]: Exception on /passive_liveliness [POST]
+Traceback (most recent call last):
+  File "/home/aditya/Documents/Projects/passive_liveliness/venv/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/aditya/Documents/Projects/passive_liveliness/venv/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/aditya/Documents/Projects/passive_liveliness/venv/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/aditya/Documents/Projects/passive_liveliness/venv/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/aditya/Documents/Projects/passive_liveliness/main.py", line 49, in passive_liveliness
+    test(image_path, "./resources/anti_spoof_models", 0))
+  File "/home/aditya/Documents/Projects/passive_liveliness/test_pad.py", line 40, in test
+    image = cv2.imread(image_name)
+TypeError: Can't convert object to 'str' for 'filename'
+2024-01-25 13:36:37,709 [INFO] [_internal.py:96]: 127.0.0.1 - - [25/Jan/2024 13:36:37] "[35m[1mPOST /passive_liveliness HTTP/1.1[0m" 500 -
+2024-01-25 13:45:47,053 [INFO] [_internal.py:96]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-01-25 13:45:47,054 [INFO] [_internal.py:96]: [33mPress CTRL+C to quit[0m
+2024-01-25 13:45:51,673 [INFO] [test_pad.py:37]: inside the presentation attack detection
+2024-01-25 13:45:51,801 [INFO] [test_pad.py:57]: height_width_ratio = 1.0
+2024-01-25 13:45:51,801 [INFO] [test_pad.py:26]: height is 1600
+2024-01-25 13:45:51,801 [INFO] [test_pad.py:27]: width is 1600
+2024-01-25 13:45:51,802 [INFO] [test_pad.py:29]: Image is not appropriate!!! Height Width should be 4/3.
+2024-01-25 13:45:51,837 [INFO] [test_pad.py:126]: w_input = 80, h_input = 80
+2024-01-25 13:45:53,417 [INFO] [test_pad.py:126]: w_input = 80, h_input = 80
+2024-01-25 13:46:47,338 [INFO] [test_pad.py:143]: prediction is [[0.30024205 0.00556876 1.69418913]]
+2024-01-25 13:46:47,340 [INFO] [test_pad.py:155]: value is 84.70945656299591
+2024-01-25 13:46:47,340 [INFO] [test_pad.py:156]: label is 2
+2024-01-25 13:46:47,340 [INFO] [test_pad.py:167]: Image 'image_folder/selfieNEZBEV.jpeg' is Fake Face. Score: 84.71.
+2024-01-25 13:46:47,341 [INFO] [test_pad.py:171]: Prediction cost 55.46 s
+2024-01-25 13:46:47,341 [INFO] [test_pad.py:192]: warning
+2024-01-25 13:46:47,468 [INFO] [test_pad.py:199]: ---------------------------passive--------------------------
+2024-01-25 13:46:47,477 [INFO] [main.py:68]: passive liveliness check is done
+2024-01-25 13:46:47,478 [INFO] [_internal.py:96]: 127.0.0.1 - - [25/Jan/2024 13:46:47] "POST /passive_liveliness HTTP/1.1" 200 -
+2024-01-25 13:46:51,056 [INFO] [test_pad.py:37]: inside the presentation attack detection
+2024-01-25 13:46:51,124 [INFO] [test_pad.py:57]: height_width_ratio = 1.0
+2024-01-25 13:46:51,124 [INFO] [test_pad.py:26]: height is 1600
+2024-01-25 13:46:51,124 [INFO] [test_pad.py:27]: width is 1600
+2024-01-25 13:46:51,124 [INFO] [test_pad.py:29]: Image is not appropriate!!! Height Width should be 4/3.
+2024-01-25 13:46:51,147 [INFO] [test_pad.py:126]: w_input = 80, h_input = 80
+2024-01-25 13:46:51,228 [INFO] [test_pad.py:126]: w_input = 80, h_input = 80
+2024-01-25 13:46:51,312 [INFO] [test_pad.py:143]: prediction is [[0.30024205 0.00556876 1.69418913]]
+2024-01-25 13:46:51,312 [INFO] [test_pad.py:155]: value is 84.70945656299591
+2024-01-25 13:46:51,312 [INFO] [test_pad.py:156]: label is 2
+2024-01-25 13:46:51,312 [INFO] [test_pad.py:167]: Image 'image_folder/selfie4CMQ44.jpeg' is Fake Face. Score: 84.71.
+2024-01-25 13:46:51,312 [INFO] [test_pad.py:171]: Prediction cost 0.16 s
+2024-01-25 13:46:51,312 [INFO] [test_pad.py:192]: warning
+2024-01-25 13:46:51,419 [INFO] [test_pad.py:199]: ---------------------------passive--------------------------
+2024-01-25 13:46:51,420 [INFO] [main.py:68]: passive liveliness check is done
+2024-01-25 13:46:51,421 [INFO] [_internal.py:96]: 127.0.0.1 - - [25/Jan/2024 13:46:51] "POST /passive_liveliness HTTP/1.1" 200 -
+2024-01-25 13:49:00,791 [INFO] [_internal.py:96]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-01-25 13:49:00,791 [INFO] [_internal.py:96]: [33mPress CTRL+C to quit[0m
+2024-01-25 13:49:04,679 [INFO] [test_pad.py:37]: inside the presentation attack detection
+2024-01-25 13:49:04,752 [INFO] [test_pad.py:57]: height_width_ratio = 1.0
+2024-01-25 13:49:04,752 [INFO] [test_pad.py:26]: height is 1600
+2024-01-25 13:49:04,752 [INFO] [test_pad.py:27]: width is 1600
+2024-01-25 13:49:04,752 [INFO] [test_pad.py:29]: Image is not appropriate!!! Height Width should be 4/3.
+2024-01-25 13:49:04,773 [INFO] [test_pad.py:126]: w_input = 80, h_input = 80
+2024-01-25 13:49:05,275 [INFO] [test_pad.py:126]: w_input = 80, h_input = 80
+2024-01-25 13:49:05,385 [INFO] [test_pad.py:143]: prediction is [[0.30024205 0.00556876 1.69418913]]
+2024-01-25 13:49:05,386 [INFO] [test_pad.py:155]: value is 84.70945656299591
+2024-01-25 13:49:05,386 [INFO] [test_pad.py:156]: label is 2
+2024-01-25 13:49:05,386 [INFO] [test_pad.py:167]: Image 'image_folder/selfieK0TXNR.jpeg' is Fake Face. Score: 84.71.
+2024-01-25 13:49:05,386 [INFO] [test_pad.py:171]: Prediction cost 0.61 s
+2024-01-25 13:49:05,386 [INFO] [test_pad.py:192]: warning
+2024-01-25 13:49:05,504 [INFO] [test_pad.py:199]: ---------------------------passive--------------------------
+2024-01-25 13:49:05,507 [INFO] [main.py:68]: passive liveliness check is done
+2024-01-25 13:49:05,507 [INFO] [_internal.py:96]: 127.0.0.1 - - [25/Jan/2024 13:49:05] "POST /passive_liveliness HTTP/1.1" 200 -
+2024-01-25 13:51:28,610 [INFO] [test_pad.py:37]: inside the presentation attack detection
+2024-01-25 13:51:28,657 [INFO] [test_pad.py:57]: height_width_ratio = 1.0
+2024-01-25 13:51:28,657 [INFO] [test_pad.py:26]: height is 1600
+2024-01-25 13:51:28,657 [INFO] [test_pad.py:27]: width is 1600
+2024-01-25 13:51:28,657 [INFO] [test_pad.py:29]: Image is not appropriate!!! Height Width should be 4/3.
+2024-01-25 13:51:28,668 [INFO] [test_pad.py:126]: w_input = 80, h_input = 80
+2024-01-25 13:51:28,733 [INFO] [test_pad.py:126]: w_input = 80, h_input = 80
+2024-01-25 13:51:28,807 [INFO] [test_pad.py:143]: prediction is [[0.30024205 0.00556876 1.69418913]]
+2024-01-25 13:51:28,807 [INFO] [test_pad.py:155]: value is 84.70945656299591
+2024-01-25 13:51:28,808 [INFO] [test_pad.py:156]: label is 2
+2024-01-25 13:51:28,808 [INFO] [test_pad.py:167]: Image 'image_folder/selfie9X6WB3.jpeg' is Fake Face. Score: 84.71.
+2024-01-25 13:51:28,808 [INFO] [test_pad.py:171]: Prediction cost 0.14 s
+2024-01-25 13:51:28,808 [INFO] [test_pad.py:192]: warning
+2024-01-25 13:51:28,922 [INFO] [test_pad.py:199]: ---------------------------passive--------------------------
+2024-01-25 13:51:28,924 [INFO] [main.py:68]: passive liveliness check is done
+2024-01-25 13:51:28,924 [INFO] [_internal.py:96]: 127.0.0.1 - - [25/Jan/2024 13:51:28] "POST /passive_liveliness HTTP/1.1" 200 -
+2024-01-25 14:00:32,620 [INFO] [_internal.py:96]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-01-25 14:00:32,620 [INFO] [_internal.py:96]: [33mPress CTRL+C to quit[0m
+2024-01-25 14:00:35,718 [INFO] [test_pad.py:39]: inside the presentation attack detection
+2024-01-25 14:00:36,027 [INFO] [test_pad.py:60]: height_width_ratio = 1.0
+2024-01-25 14:00:36,027 [INFO] [test_pad.py:28]: height is 608
+2024-01-25 14:00:36,027 [INFO] [test_pad.py:29]: width is 608
+2024-01-25 14:00:36,027 [INFO] [test_pad.py:31]: Image is not appropriate!!! Height Width should be 4/3.
+2024-01-25 14:00:36,039 [INFO] [test_pad.py:129]: w_input = 80, h_input = 80
+2024-01-25 14:00:36,345 [INFO] [test_pad.py:129]: w_input = 80, h_input = 80
+2024-01-25 14:00:36,439 [INFO] [test_pad.py:146]: prediction is [[0.2297093  1.76633382 0.00395689]]
+2024-01-25 14:00:36,440 [INFO] [test_pad.py:158]: value is 88.31669092178345
+2024-01-25 14:00:36,440 [INFO] [test_pad.py:159]: label is 1
+2024-01-25 14:00:36,440 [INFO] [test_pad.py:163]: Image 'image_folder/selfieSFJDNO.jpeg' is Real Face. Score: 88.32.
+2024-01-25 14:00:36,440 [INFO] [test_pad.py:174]: Prediction cost 0.40 s
+2024-01-25 14:00:36,440 [INFO] [test_pad.py:195]: warning
+2024-01-25 14:00:36,541 [INFO] [test_pad.py:202]: ---------------------------passive--------------------------
+2024-01-25 14:00:36,543 [INFO] [main.py:68]: passive liveliness check is done
+2024-01-25 14:00:36,544 [INFO] [_internal.py:96]: 127.0.0.1 - - [25/Jan/2024 14:00:36] "POST /passive_liveliness HTTP/1.1" 200 -
+2024-01-25 14:00:48,084 [INFO] [test_pad.py:39]: inside the presentation attack detection
+2024-01-25 14:00:48,302 [INFO] [test_pad.py:60]: height_width_ratio = 1.0
+2024-01-25 14:00:48,302 [INFO] [test_pad.py:28]: height is 608
+2024-01-25 14:00:48,302 [INFO] [test_pad.py:29]: width is 608
+2024-01-25 14:00:48,302 [INFO] [test_pad.py:31]: Image is not appropriate!!! Height Width should be 4/3.
+2024-01-25 14:00:48,316 [INFO] [test_pad.py:129]: w_input = 80, h_input = 80
+2024-01-25 14:00:48,379 [INFO] [test_pad.py:129]: w_input = 80, h_input = 80
+2024-01-25 14:00:48,453 [INFO] [test_pad.py:146]: prediction is [[0.2297093  1.76633382 0.00395689]]
+2024-01-25 14:00:48,453 [INFO] [test_pad.py:158]: value is 88.31669092178345
+2024-01-25 14:00:48,453 [INFO] [test_pad.py:159]: label is 1
+2024-01-25 14:00:48,453 [INFO] [test_pad.py:163]: Image 'image_folder/selfieY17M38.jpeg' is Real Face. Score: 88.32.
+2024-01-25 14:00:48,453 [INFO] [test_pad.py:174]: Prediction cost 0.14 s
+2024-01-25 14:00:48,453 [INFO] [test_pad.py:195]: warning
+2024-01-25 14:00:48,566 [INFO] [test_pad.py:202]: ---------------------------passive--------------------------
+2024-01-25 14:00:48,568 [INFO] [main.py:68]: passive liveliness check is done
+2024-01-25 14:00:48,569 [INFO] [_internal.py:96]: 127.0.0.1 - - [25/Jan/2024 14:00:48] "POST /passive_liveliness HTTP/1.1" 200 -
+2024-01-25 14:01:28,035 [INFO] [_internal.py:96]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-01-25 14:01:28,035 [INFO] [_internal.py:96]: [33mPress CTRL+C to quit[0m
+2024-01-25 14:01:35,344 [INFO] [test_pad.py:39]: inside the presentation attack detection
+2024-01-25 14:01:35,474 [INFO] [test_pad.py:60]: height_width_ratio = 1.0
+2024-01-25 14:01:35,474 [INFO] [test_pad.py:28]: height is 375
+2024-01-25 14:01:35,474 [INFO] [test_pad.py:29]: width is 375
+2024-01-25 14:01:35,474 [INFO] [test_pad.py:31]: Image is not appropriate!!! Height Width should be 4/3.
+2024-01-25 14:01:35,489 [INFO] [test_pad.py:129]: w_input = 80, h_input = 80
+2024-01-25 14:01:35,804 [INFO] [test_pad.py:129]: w_input = 80, h_input = 80
+2024-01-25 14:01:35,904 [INFO] [test_pad.py:146]: prediction is [[0.00753253 1.98854172 0.00392574]]
+2024-01-25 14:01:35,905 [INFO] [test_pad.py:158]: value is 99.42708611488342
+2024-01-25 14:01:35,905 [INFO] [test_pad.py:159]: label is 1
+2024-01-25 14:01:35,905 [INFO] [test_pad.py:163]: Image 'image_folder/img3376WMXN.png' is Real Face. Score: 99.43.
+2024-01-25 14:01:35,905 [INFO] [test_pad.py:174]: Prediction cost 0.42 s
+2024-01-25 14:01:35,905 [INFO] [test_pad.py:195]: warning
+2024-01-25 14:01:36,016 [INFO] [test_pad.py:202]: ---------------------------passive--------------------------
+2024-01-25 14:01:36,017 [INFO] [main.py:68]: passive liveliness check is done
+2024-01-25 14:01:36,018 [INFO] [_internal.py:96]: 127.0.0.1 - - [25/Jan/2024 14:01:36] "POST /passive_liveliness HTTP/1.1" 200 -
+2024-01-25 14:02:49,254 [INFO] [test_pad.py:39]: inside the presentation attack detection
+2024-01-25 14:02:49,338 [INFO] [test_pad.py:60]: height_width_ratio = 1.0
+2024-01-25 14:02:49,338 [INFO] [test_pad.py:28]: height is 300
+2024-01-25 14:02:49,338 [INFO] [test_pad.py:29]: width is 300
+2024-01-25 14:02:49,338 [INFO] [test_pad.py:31]: Image is not appropriate!!! Height Width should be 4/3.
+2024-01-25 14:02:49,353 [INFO] [test_pad.py:129]: w_input = 80, h_input = 80
+2024-01-25 14:02:49,428 [INFO] [test_pad.py:129]: w_input = 80, h_input = 80
+2024-01-25 14:02:49,535 [INFO] [test_pad.py:146]: prediction is [[0.49838139 0.02162245 1.47999614]]
+2024-01-25 14:02:49,535 [INFO] [test_pad.py:158]: value is 73.9998072385788
+2024-01-25 14:02:49,535 [INFO] [test_pad.py:159]: label is 2
+2024-01-25 14:02:49,535 [INFO] [test_pad.py:170]: Image 'image_folder/livelinessTCJU32FE.png' is Fake Face. Score: 74.00.
+2024-01-25 14:02:49,535 [INFO] [test_pad.py:174]: Prediction cost 0.18 s
+2024-01-25 14:02:49,535 [INFO] [test_pad.py:195]: warning
+2024-01-25 14:02:49,655 [INFO] [test_pad.py:202]: ---------------------------passive--------------------------
+2024-01-25 14:02:49,656 [INFO] [main.py:68]: passive liveliness check is done
+2024-01-25 14:02:49,657 [INFO] [_internal.py:96]: 127.0.0.1 - - [25/Jan/2024 14:02:49] "POST /passive_liveliness HTTP/1.1" 200 -
+2024-01-25 14:03:44,581 [INFO] [test_pad.py:39]: inside the presentation attack detection
+2024-01-25 14:03:44,637 [INFO] [test_pad.py:60]: height_width_ratio = 1.0
+2024-01-25 14:03:44,637 [INFO] [test_pad.py:28]: height is 177
+2024-01-25 14:03:44,637 [INFO] [test_pad.py:29]: width is 177
+2024-01-25 14:03:44,637 [INFO] [test_pad.py:31]: Image is not appropriate!!! Height Width should be 4/3.
+2024-01-25 14:03:44,661 [INFO] [test_pad.py:129]: w_input = 80, h_input = 80
+2024-01-25 14:03:44,733 [INFO] [test_pad.py:129]: w_input = 80, h_input = 80
+2024-01-25 14:03:44,816 [INFO] [test_pad.py:146]: prediction is [[0.05537296 1.91312242 0.03150463]]
+2024-01-25 14:03:44,817 [INFO] [test_pad.py:158]: value is 95.65612077713013
+2024-01-25 14:03:44,817 [INFO] [test_pad.py:159]: label is 1
+2024-01-25 14:03:44,817 [INFO] [test_pad.py:163]: Image 'image_folder/selfie-removebg-previewNMWU9W.jpg' is Real Face. Score: 95.66.
+2024-01-25 14:03:44,817 [INFO] [test_pad.py:174]: Prediction cost 0.16 s
+2024-01-25 14:03:44,817 [INFO] [test_pad.py:195]: warning
+2024-01-25 14:03:44,944 [INFO] [test_pad.py:202]: ---------------------------passive--------------------------
+2024-01-25 14:03:44,946 [INFO] [main.py:68]: passive liveliness check is done
+2024-01-25 14:03:44,947 [INFO] [_internal.py:96]: 127.0.0.1 - - [25/Jan/2024 14:03:44] "POST /passive_liveliness HTTP/1.1" 200 -
+2024-01-25 14:04:01,763 [INFO] [test_pad.py:39]: inside the presentation attack detection
+2024-01-25 14:04:02,025 [INFO] [test_pad.py:60]: height_width_ratio = 1.0
+2024-01-25 14:04:02,025 [INFO] [test_pad.py:28]: height is 608
+2024-01-25 14:04:02,025 [INFO] [test_pad.py:29]: width is 608
+2024-01-25 14:04:02,026 [INFO] [test_pad.py:31]: Image is not appropriate!!! Height Width should be 4/3.
+2024-01-25 14:04:02,038 [INFO] [test_pad.py:129]: w_input = 80, h_input = 80
+2024-01-25 14:04:02,105 [INFO] [test_pad.py:129]: w_input = 80, h_input = 80
+2024-01-25 14:04:02,184 [INFO] [test_pad.py:146]: prediction is [[0.2297093  1.76633382 0.00395689]]
+2024-01-25 14:04:02,184 [INFO] [test_pad.py:158]: value is 88.31669092178345
+2024-01-25 14:04:02,184 [INFO] [test_pad.py:159]: label is 1
+2024-01-25 14:04:02,184 [INFO] [test_pad.py:163]: Image 'image_folder/selfieBHN0CH.jpeg' is Real Face. Score: 88.32.
+2024-01-25 14:04:02,184 [INFO] [test_pad.py:174]: Prediction cost 0.15 s
+2024-01-25 14:04:02,184 [INFO] [test_pad.py:195]: warning
+2024-01-25 14:04:02,325 [INFO] [test_pad.py:202]: ---------------------------passive--------------------------
+2024-01-25 14:04:02,327 [INFO] [main.py:68]: passive liveliness check is done
+2024-01-25 14:04:02,328 [INFO] [_internal.py:96]: 127.0.0.1 - - [25/Jan/2024 14:04:02] "POST /passive_liveliness HTTP/1.1" 200 -
+2024-01-25 14:06:37,917 [INFO] [test_pad.py:39]: inside the presentation attack detection
+2024-01-25 14:06:38,004 [INFO] [test_pad.py:60]: height_width_ratio = 1.0
+2024-01-25 14:06:38,004 [INFO] [test_pad.py:28]: height is 375
+2024-01-25 14:06:38,004 [INFO] [test_pad.py:29]: width is 375
+2024-01-25 14:06:38,004 [INFO] [test_pad.py:31]: Image is not appropriate!!! Height Width should be 4/3.
+2024-01-25 14:06:38,018 [INFO] [test_pad.py:129]: w_input = 80, h_input = 80
+2024-01-25 14:06:38,090 [INFO] [test_pad.py:129]: w_input = 80, h_input = 80
+2024-01-25 14:06:38,178 [INFO] [test_pad.py:146]: prediction is [[0.00753253 1.98854172 0.00392574]]
+2024-01-25 14:06:38,178 [INFO] [test_pad.py:158]: value is 99.42708611488342
+2024-01-25 14:06:38,178 [INFO] [test_pad.py:159]: label is 1
+2024-01-25 14:06:38,178 [INFO] [test_pad.py:163]: Image 'image_folder/img334XT6IO.png' is Real Face. Score: 99.43.
+2024-01-25 14:06:38,178 [INFO] [test_pad.py:174]: Prediction cost 0.16 s
+2024-01-25 14:06:38,178 [INFO] [test_pad.py:195]: warning
+2024-01-25 14:06:38,305 [INFO] [test_pad.py:202]: ---------------------------passive--------------------------
+2024-01-25 14:06:38,307 [INFO] [main.py:68]: passive liveliness check is done
+2024-01-25 14:06:38,307 [INFO] [_internal.py:96]: 127.0.0.1 - - [25/Jan/2024 14:06:38] "POST /passive_liveliness HTTP/1.1" 200 -
+2024-01-25 14:09:02,409 [INFO] [_internal.py:96]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-01-25 14:09:02,409 [INFO] [_internal.py:96]: [33mPress CTRL+C to quit[0m
+2024-01-25 14:09:05,705 [INFO] [test_pad.py:39]: inside the presentation attack detection
+2024-01-25 14:09:05,764 [INFO] [test_pad.py:61]: height_width_ratio = 0.71267252195734
+2024-01-25 14:09:05,764 [INFO] [test_pad.py:28]: height is 568
+2024-01-25 14:09:05,764 [INFO] [test_pad.py:29]: width is 797
+2024-01-25 14:09:05,764 [INFO] [test_pad.py:31]: Image is not appropriate!!! Height Width should be 4/3.
+2024-01-25 14:09:05,777 [INFO] [test_pad.py:130]: w_input = 80, h_input = 80
+2024-01-25 14:09:06,125 [INFO] [test_pad.py:130]: w_input = 80, h_input = 80
+2024-01-25 14:09:06,238 [INFO] [test_pad.py:147]: prediction is [[0.03392103 1.04988655 0.91619244]]
+2024-01-25 14:09:06,238 [INFO] [test_pad.py:159]: value is 52.49432772397995
+2024-01-25 14:09:06,238 [INFO] [test_pad.py:160]: label is 1
+2024-01-25 14:09:06,238 [INFO] [test_pad.py:164]: Image 'image_folder/test_maskVCNY8R.jpg' is Real Face. Score: 52.49.
+2024-01-25 14:09:06,238 [INFO] [test_pad.py:175]: Prediction cost 0.46 s
+2024-01-25 14:09:06,238 [INFO] [test_pad.py:196]: warning
+2024-01-25 14:09:06,364 [INFO] [test_pad.py:203]: ---------------------------passive--------------------------
+2024-01-25 14:09:06,365 [INFO] [main.py:68]: passive liveliness check is done
+2024-01-25 14:09:06,366 [INFO] [_internal.py:96]: 127.0.0.1 - - [25/Jan/2024 14:09:06] "POST /passive_liveliness HTTP/1.1" 200 -
+2024-01-25 14:09:22,810 [INFO] [test_pad.py:39]: inside the presentation attack detection
+2024-01-25 14:09:22,853 [INFO] [test_pad.py:61]: height_width_ratio = 1.0
+2024-01-25 14:09:22,853 [INFO] [test_pad.py:28]: height is 1600
+2024-01-25 14:09:22,853 [INFO] [test_pad.py:29]: width is 1600
+2024-01-25 14:09:22,853 [INFO] [test_pad.py:31]: Image is not appropriate!!! Height Width should be 4/3.
+2024-01-25 14:09:22,865 [INFO] [test_pad.py:130]: w_input = 80, h_input = 80
+2024-01-25 14:09:22,937 [INFO] [test_pad.py:130]: w_input = 80, h_input = 80
+2024-01-25 14:09:23,032 [INFO] [test_pad.py:147]: prediction is [[0.30024205 0.00556876 1.69418913]]
+2024-01-25 14:09:23,033 [INFO] [test_pad.py:159]: value is 84.70945656299591
+2024-01-25 14:09:23,033 [INFO] [test_pad.py:160]: label is 2
+2024-01-25 14:09:23,033 [INFO] [test_pad.py:171]: Image 'image_folder/selfieQX79KZ.jpeg' is Fake Face. Score: 84.71.
+2024-01-25 14:09:23,033 [INFO] [test_pad.py:175]: Prediction cost 0.17 s
+2024-01-25 14:09:23,033 [INFO] [test_pad.py:196]: warning
+2024-01-25 14:09:23,150 [INFO] [test_pad.py:203]: ---------------------------passive--------------------------
+2024-01-25 14:09:23,152 [INFO] [main.py:68]: passive liveliness check is done
+2024-01-25 14:09:23,152 [INFO] [_internal.py:96]: 127.0.0.1 - - [25/Jan/2024 14:09:23] "POST /passive_liveliness HTTP/1.1" 200 -
+2024-01-25 14:09:36,515 [INFO] [test_pad.py:39]: inside the presentation attack detection
+2024-01-25 14:09:36,559 [INFO] [test_pad.py:61]: height_width_ratio = 1.0
+2024-01-25 14:09:36,559 [INFO] [test_pad.py:28]: height is 1600
+2024-01-25 14:09:36,559 [INFO] [test_pad.py:29]: width is 1600
+2024-01-25 14:09:36,559 [INFO] [test_pad.py:31]: Image is not appropriate!!! Height Width should be 4/3.
+2024-01-25 14:09:36,570 [INFO] [test_pad.py:130]: w_input = 80, h_input = 80
+2024-01-25 14:09:36,641 [INFO] [test_pad.py:130]: w_input = 80, h_input = 80
+2024-01-25 14:09:36,713 [INFO] [test_pad.py:147]: prediction is [[0.30024205 0.00556876 1.69418913]]
+2024-01-25 14:09:36,714 [INFO] [test_pad.py:159]: value is 84.70945656299591
+2024-01-25 14:09:36,714 [INFO] [test_pad.py:160]: label is 2
+2024-01-25 14:09:36,714 [INFO] [test_pad.py:171]: Image 'image_folder/selfieDSSBGD.jpeg' is Fake Face. Score: 84.71.
+2024-01-25 14:09:36,714 [INFO] [test_pad.py:175]: Prediction cost 0.14 s
+2024-01-25 14:09:36,714 [INFO] [test_pad.py:196]: warning
+2024-01-25 14:09:36,839 [INFO] [test_pad.py:203]: ---------------------------passive--------------------------
+2024-01-25 14:09:36,841 [INFO] [main.py:68]: passive liveliness check is done
+2024-01-25 14:09:36,841 [INFO] [_internal.py:96]: 127.0.0.1 - - [25/Jan/2024 14:09:36] "POST /passive_liveliness HTTP/1.1" 200 -
+2024-01-25 14:09:52,414 [INFO] [test_pad.py:39]: inside the presentation attack detection
+2024-01-25 14:09:52,458 [INFO] [test_pad.py:61]: height_width_ratio = 1.0
+2024-01-25 14:09:52,458 [INFO] [test_pad.py:28]: height is 1600
+2024-01-25 14:09:52,458 [INFO] [test_pad.py:29]: width is 1600
+2024-01-25 14:09:52,458 [INFO] [test_pad.py:31]: Image is not appropriate!!! Height Width should be 4/3.
+2024-01-25 14:09:52,470 [INFO] [test_pad.py:130]: w_input = 80, h_input = 80
+2024-01-25 14:09:52,531 [INFO] [test_pad.py:130]: w_input = 80, h_input = 80
+2024-01-25 14:09:52,621 [INFO] [test_pad.py:147]: prediction is [[0.30024205 0.00556876 1.69418913]]
+2024-01-25 14:09:52,622 [INFO] [test_pad.py:159]: value is 84.70945656299591
+2024-01-25 14:09:52,622 [INFO] [test_pad.py:160]: label is 2
+2024-01-25 14:09:52,622 [INFO] [test_pad.py:171]: Image 'image_folder/selfieY9NBYY.jpeg' is Fake Face. Score: 84.71.
+2024-01-25 14:09:52,622 [INFO] [test_pad.py:175]: Prediction cost 0.15 s
+2024-01-25 14:09:52,622 [INFO] [test_pad.py:196]: warning
+2024-01-25 14:09:52,758 [INFO] [test_pad.py:203]: ---------------------------passive--------------------------
+2024-01-25 14:09:52,760 [INFO] [main.py:68]: passive liveliness check is done
+2024-01-25 14:09:52,761 [INFO] [_internal.py:96]: 127.0.0.1 - - [25/Jan/2024 14:09:52] "POST /passive_liveliness HTTP/1.1" 200 -
+2024-01-25 14:10:20,475 [INFO] [_internal.py:96]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-01-25 14:10:20,475 [INFO] [_internal.py:96]: [33mPress CTRL+C to quit[0m
+2024-01-25 14:10:26,700 [INFO] [test_pad.py:39]: inside the presentation attack detection
+2024-01-25 14:10:26,759 [INFO] [test_pad.py:61]: height_width_ratio = 1.0
+2024-01-25 14:10:26,759 [INFO] [test_pad.py:28]: height is 1600
+2024-01-25 14:10:26,760 [INFO] [test_pad.py:29]: width is 1600
+2024-01-25 14:10:26,760 [INFO] [test_pad.py:31]: Image is not appropriate!!! Height Width should be 4/3.
+2024-01-25 14:10:26,777 [INFO] [test_pad.py:130]: w_input = 80, h_input = 80
+2024-01-25 14:10:27,194 [INFO] [test_pad.py:130]: w_input = 80, h_input = 80
+2024-01-25 14:10:27,296 [INFO] [test_pad.py:147]: prediction is [[0.30024205 0.00556876 1.69418913]]
+2024-01-25 14:10:27,296 [INFO] [test_pad.py:159]: value is 84.70945656299591
+2024-01-25 14:10:27,297 [INFO] [test_pad.py:160]: label is 2
+2024-01-25 14:10:27,297 [INFO] [test_pad.py:171]: Image 'image_folder/selfie8YBB1T.jpeg' is Fake Face. Score: 84.71.
+2024-01-25 14:10:27,297 [INFO] [test_pad.py:175]: Prediction cost 0.52 s
+2024-01-25 14:10:27,297 [INFO] [test_pad.py:196]: warning
+2024-01-25 14:10:27,412 [INFO] [test_pad.py:203]: ---------------------------passive--------------------------
+2024-01-25 14:10:27,413 [INFO] [main.py:68]: passive liveliness check is done
+2024-01-25 14:10:27,414 [INFO] [_internal.py:96]: 127.0.0.1 - - [25/Jan/2024 14:10:27] "POST /passive_liveliness HTTP/1.1" 200 -
+2024-01-25 14:10:43,390 [INFO] [_internal.py:96]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-01-25 14:10:43,390 [INFO] [_internal.py:96]: [33mPress CTRL+C to quit[0m
+2024-01-25 14:10:46,343 [INFO] [test_pad.py:39]: inside the presentation attack detection
+2024-01-25 14:10:46,401 [INFO] [test_pad.py:61]: height_width_ratio = 1.0
+2024-01-25 14:10:46,401 [INFO] [test_pad.py:28]: height is 1600
+2024-01-25 14:10:46,401 [INFO] [test_pad.py:29]: width is 1600
+2024-01-25 14:10:46,401 [INFO] [test_pad.py:31]: Image is not appropriate!!! Height Width should be 4/3.
+2024-01-25 14:10:46,415 [INFO] [test_pad.py:130]: w_input = 80, h_input = 80
+2024-01-25 14:10:46,743 [INFO] [test_pad.py:130]: w_input = 80, h_input = 80
+2024-01-25 14:10:46,850 [INFO] [test_pad.py:147]: prediction is [[0.30024205 0.00556876 1.69418913]]
+2024-01-25 14:10:46,851 [INFO] [test_pad.py:159]: value is 84.70945656299591
+2024-01-25 14:10:46,851 [INFO] [test_pad.py:160]: label is 2
+2024-01-25 14:10:46,851 [INFO] [test_pad.py:171]: Image 'image_folder/selfie0ITX3G.jpeg' is Fake Face. Score: 84.71.
+2024-01-25 14:10:46,851 [INFO] [test_pad.py:175]: Prediction cost 0.43 s
+2024-01-25 14:10:46,851 [INFO] [test_pad.py:196]: warning
+2024-01-25 14:10:46,960 [INFO] [test_pad.py:203]: ---------------------------passive--------------------------
+2024-01-25 14:10:46,964 [INFO] [main.py:68]: passive liveliness check is done
+2024-01-25 14:10:46,965 [INFO] [_internal.py:96]: 127.0.0.1 - - [25/Jan/2024 14:10:46] "POST /passive_liveliness HTTP/1.1" 200 -
+2024-01-25 14:11:21,300 [INFO] [test_pad.py:39]: inside the presentation attack detection
+2024-01-25 14:11:21,344 [INFO] [test_pad.py:61]: height_width_ratio = 1.0
+2024-01-25 14:11:21,344 [INFO] [test_pad.py:28]: height is 1600
+2024-01-25 14:11:21,344 [INFO] [test_pad.py:29]: width is 1600
+2024-01-25 14:11:21,344 [INFO] [test_pad.py:31]: Image is not appropriate!!! Height Width should be 4/3.
+2024-01-25 14:11:21,357 [INFO] [test_pad.py:130]: w_input = 80, h_input = 80
+2024-01-25 14:11:21,441 [INFO] [test_pad.py:130]: w_input = 80, h_input = 80
+2024-01-25 14:11:21,517 [INFO] [test_pad.py:147]: prediction is [[0.30024205 0.00556876 1.69418913]]
+2024-01-25 14:11:21,517 [INFO] [test_pad.py:159]: value is 84.70945656299591
+2024-01-25 14:11:21,517 [INFO] [test_pad.py:160]: label is 2
+2024-01-25 14:11:21,517 [INFO] [test_pad.py:171]: Image 'image_folder/selfieDPUL2L.jpeg' is Fake Face. Score: 84.71.
+2024-01-25 14:11:21,517 [INFO] [test_pad.py:175]: Prediction cost 0.16 s
+2024-01-25 14:11:21,518 [INFO] [test_pad.py:196]: warning
+2024-01-25 14:11:21,636 [INFO] [test_pad.py:203]: ---------------------------passive--------------------------
+2024-01-25 14:11:21,637 [INFO] [main.py:68]: passive liveliness check is done
+2024-01-25 14:11:21,638 [INFO] [_internal.py:96]: 127.0.0.1 - - [25/Jan/2024 14:11:21] "POST /passive_liveliness HTTP/1.1" 200 -
+2024-01-25 14:12:10,066 [INFO] [_internal.py:96]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-01-25 14:12:10,066 [INFO] [_internal.py:96]: [33mPress CTRL+C to quit[0m
+2024-01-25 14:12:12,901 [INFO] [test_pad.py:39]: inside the presentation attack detection
+2024-01-25 14:12:12,961 [INFO] [test_pad.py:61]: height_width_ratio = 0.71267252195734
+2024-01-25 14:12:12,961 [INFO] [test_pad.py:28]: height is 568
+2024-01-25 14:12:12,961 [INFO] [test_pad.py:29]: width is 797
+2024-01-25 14:12:12,961 [INFO] [test_pad.py:31]: Image is not appropriate!!! Height Width should be 4/3.
+2024-01-25 14:12:12,977 [INFO] [test_pad.py:130]: w_input = 80, h_input = 80
+2024-01-25 14:12:13,335 [INFO] [test_pad.py:130]: w_input = 80, h_input = 80
+2024-01-25 14:12:13,449 [INFO] [test_pad.py:147]: prediction is [[0.03392103 1.04988655 0.91619244]]
+2024-01-25 14:12:13,450 [INFO] [test_pad.py:159]: value is 52.49432772397995
+2024-01-25 14:12:13,450 [INFO] [test_pad.py:160]: label is 1
+2024-01-25 14:12:13,450 [INFO] [test_pad.py:164]: Image 'image_folder/test_maskV4S3MQ.jpg' is Real Face. Score: 52.49.
+2024-01-25 14:12:13,450 [INFO] [test_pad.py:175]: Prediction cost 0.47 s
+2024-01-25 14:12:13,450 [INFO] [test_pad.py:196]: warning
+2024-01-25 14:12:13,572 [INFO] [test_pad.py:203]: ---------------------------passive--------------------------
+2024-01-25 14:12:13,574 [INFO] [main.py:68]: passive liveliness check is done
+2024-01-25 14:12:13,575 [INFO] [_internal.py:96]: 127.0.0.1 - - [25/Jan/2024 14:12:13] "POST /passive_liveliness HTTP/1.1" 200 -
+2024-01-25 14:13:44,436 [INFO] [test_pad.py:39]: inside the presentation attack detection
+2024-01-25 14:13:44,489 [INFO] [test_pad.py:61]: height_width_ratio = 1.0
+2024-01-25 14:13:44,490 [INFO] [test_pad.py:28]: height is 1600
+2024-01-25 14:13:44,490 [INFO] [test_pad.py:29]: width is 1600
+2024-01-25 14:13:44,490 [INFO] [test_pad.py:31]: Image is not appropriate!!! Height Width should be 4/3.
+2024-01-25 14:13:44,503 [INFO] [test_pad.py:130]: w_input = 80, h_input = 80
+2024-01-25 14:13:44,576 [INFO] [test_pad.py:130]: w_input = 80, h_input = 80
+2024-01-25 14:13:44,668 [INFO] [test_pad.py:147]: prediction is [[0.30024205 0.00556876 1.69418913]]
+2024-01-25 14:13:44,669 [INFO] [test_pad.py:159]: value is 84.70945656299591
+2024-01-25 14:13:44,669 [INFO] [test_pad.py:160]: label is 2
+2024-01-25 14:13:44,669 [INFO] [test_pad.py:171]: Image 'image_folder/selfieJ1A3N5.jpeg' is Fake Face. Score: 84.71.
+2024-01-25 14:13:44,669 [INFO] [test_pad.py:175]: Prediction cost 0.16 s
+2024-01-25 14:13:44,669 [INFO] [test_pad.py:196]: warning
+2024-01-25 14:13:44,782 [INFO] [test_pad.py:203]: ---------------------------passive--------------------------
+2024-01-25 14:13:44,785 [INFO] [main.py:68]: passive liveliness check is done
+2024-01-25 14:13:44,786 [INFO] [_internal.py:96]: 127.0.0.1 - - [25/Jan/2024 14:13:44] "POST /passive_liveliness HTTP/1.1" 200 -
+2024-01-25 14:16:18,842 [INFO] [test_pad.py:39]: inside the presentation attack detection
+2024-01-25 14:16:19,029 [INFO] [test_pad.py:61]: height_width_ratio = 1.0
+2024-01-25 14:16:19,029 [INFO] [test_pad.py:28]: height is 1600
+2024-01-25 14:16:19,029 [INFO] [test_pad.py:29]: width is 1600
+2024-01-25 14:16:19,029 [INFO] [test_pad.py:31]: Image is not appropriate!!! Height Width should be 4/3.
+2024-01-25 14:16:19,056 [INFO] [test_pad.py:130]: w_input = 80, h_input = 80
+2024-01-25 14:16:19,132 [INFO] [test_pad.py:130]: w_input = 80, h_input = 80
+2024-01-25 14:16:19,206 [INFO] [test_pad.py:147]: prediction is [[0.35137727 0.00433158 1.64429116]]
+2024-01-25 14:16:19,206 [INFO] [test_pad.py:159]: value is 82.21455812454224
+2024-01-25 14:16:19,206 [INFO] [test_pad.py:160]: label is 2
+2024-01-25 14:16:19,206 [INFO] [test_pad.py:171]: Image 'image_folder/test_maskVW9KOD.jpg' is Fake Face. Score: 82.21.
+2024-01-25 14:16:19,206 [INFO] [test_pad.py:175]: Prediction cost 0.15 s
+2024-01-25 14:16:19,206 [INFO] [test_pad.py:196]: warning
+2024-01-25 14:16:19,331 [INFO] [test_pad.py:203]: ---------------------------passive--------------------------
+2024-01-25 14:16:19,334 [INFO] [main.py:68]: passive liveliness check is done
+2024-01-25 14:16:19,335 [INFO] [_internal.py:96]: 127.0.0.1 - - [25/Jan/2024 14:16:19] "POST /passive_liveliness HTTP/1.1" 200 -
+2024-01-25 14:17:52,475 [INFO] [_internal.py:96]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-01-25 14:17:52,475 [INFO] [_internal.py:96]: [33mPress CTRL+C to quit[0m
+2024-01-25 14:17:52,764 [INFO] [test_pad.py:39]: inside the presentation attack detection
+2024-01-25 14:17:53,118 [INFO] [test_pad.py:61]: height_width_ratio = 1.0
+2024-01-25 14:17:53,118 [INFO] [test_pad.py:28]: height is 608
+2024-01-25 14:17:53,118 [INFO] [test_pad.py:29]: width is 608
+2024-01-25 14:17:53,118 [INFO] [test_pad.py:31]: Image is not appropriate!!! Height Width should be 4/3.
+2024-01-25 14:17:53,131 [INFO] [test_pad.py:130]: w_input = 80, h_input = 80
+2024-01-25 14:17:53,441 [INFO] [test_pad.py:130]: w_input = 80, h_input = 80
+2024-01-25 14:17:53,540 [INFO] [test_pad.py:147]: prediction is [[0.23650019 1.75917065 0.00432929]]
+2024-01-25 14:17:53,541 [INFO] [test_pad.py:159]: value is 87.9585325717926
+2024-01-25 14:17:53,541 [INFO] [test_pad.py:160]: label is 1
+2024-01-25 14:17:53,541 [INFO] [test_pad.py:164]: Image 'image_folder/selfieWZYRLB.png' is Real Face. Score: 87.96.
+2024-01-25 14:17:53,541 [INFO] [test_pad.py:175]: Prediction cost 0.41 s
+2024-01-25 14:17:53,541 [INFO] [test_pad.py:196]: warning
+2024-01-25 14:17:53,657 [INFO] [test_pad.py:203]: ---------------------------passive--------------------------
+2024-01-25 14:17:53,659 [INFO] [main.py:68]: passive liveliness check is done
+2024-01-25 14:17:53,660 [INFO] [_internal.py:96]: 127.0.0.1 - - [25/Jan/2024 14:17:53] "POST /passive_liveliness HTTP/1.1" 200 -
+2024-01-25 14:18:11,358 [INFO] [test_pad.py:39]: inside the presentation attack detection
+2024-01-25 14:18:11,436 [INFO] [test_pad.py:61]: height_width_ratio = 1.0
+2024-01-25 14:18:11,436 [INFO] [test_pad.py:28]: height is 300
+2024-01-25 14:18:11,436 [INFO] [test_pad.py:29]: width is 300
+2024-01-25 14:18:11,436 [INFO] [test_pad.py:31]: Image is not appropriate!!! Height Width should be 4/3.
+2024-01-25 14:18:11,451 [INFO] [test_pad.py:130]: w_input = 80, h_input = 80
+2024-01-25 14:18:11,516 [INFO] [test_pad.py:130]: w_input = 80, h_input = 80
+2024-01-25 14:18:11,593 [INFO] [test_pad.py:147]: prediction is [[0.49838139 0.02162245 1.47999614]]
+2024-01-25 14:18:11,594 [INFO] [test_pad.py:159]: value is 73.9998072385788
+2024-01-25 14:18:11,594 [INFO] [test_pad.py:160]: label is 2
+2024-01-25 14:18:11,594 [INFO] [test_pad.py:171]: Image 'image_folder/livelinessTCJOJGBP.png' is Fake Face. Score: 74.00.
+2024-01-25 14:18:11,594 [INFO] [test_pad.py:175]: Prediction cost 0.14 s
+2024-01-25 14:18:11,594 [INFO] [test_pad.py:196]: warning
+2024-01-25 14:18:11,708 [INFO] [test_pad.py:203]: ---------------------------passive--------------------------
+2024-01-25 14:18:11,709 [INFO] [main.py:68]: passive liveliness check is done
+2024-01-25 14:18:11,710 [INFO] [_internal.py:96]: 127.0.0.1 - - [25/Jan/2024 14:18:11] "POST /passive_liveliness HTTP/1.1" 200 -
+2024-01-25 14:18:25,065 [INFO] [test_pad.py:39]: inside the presentation attack detection
+2024-01-25 14:18:25,117 [INFO] [test_pad.py:61]: height_width_ratio = 1.0
+2024-01-25 14:18:25,117 [INFO] [test_pad.py:28]: height is 177
+2024-01-25 14:18:25,117 [INFO] [test_pad.py:29]: width is 177
+2024-01-25 14:18:25,117 [INFO] [test_pad.py:31]: Image is not appropriate!!! Height Width should be 4/3.
+2024-01-25 14:18:25,129 [INFO] [test_pad.py:130]: w_input = 80, h_input = 80
+2024-01-25 14:18:25,188 [INFO] [test_pad.py:130]: w_input = 80, h_input = 80
+2024-01-25 14:18:25,273 [INFO] [test_pad.py:147]: prediction is [[0.05537296 1.91312242 0.03150463]]
+2024-01-25 14:18:25,274 [INFO] [test_pad.py:159]: value is 95.65612077713013
+2024-01-25 14:18:25,274 [INFO] [test_pad.py:160]: label is 1
+2024-01-25 14:18:25,274 [INFO] [test_pad.py:164]: Image 'image_folder/selfie-removebg-previewXV8GO7.jpg' is Real Face. Score: 95.66.
+2024-01-25 14:18:25,274 [INFO] [test_pad.py:175]: Prediction cost 0.14 s
+2024-01-25 14:18:25,274 [INFO] [test_pad.py:196]: warning
+2024-01-25 14:18:25,388 [INFO] [test_pad.py:203]: ---------------------------passive--------------------------
+2024-01-25 14:18:25,390 [INFO] [main.py:68]: passive liveliness check is done
+2024-01-25 14:18:25,390 [INFO] [_internal.py:96]: 127.0.0.1 - - [25/Jan/2024 14:18:25] "POST /passive_liveliness HTTP/1.1" 200 -
+2024-01-25 14:18:33,867 [INFO] [test_pad.py:39]: inside the presentation attack detection
+2024-01-25 14:18:33,911 [ERROR] [app.py:828]: Exception on /passive_liveliness [POST]
+Traceback (most recent call last):
+  File "/home/aditya/Documents/Projects/passive_liveliness/venv/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/aditya/Documents/Projects/passive_liveliness/venv/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/aditya/Documents/Projects/passive_liveliness/venv/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/aditya/Documents/Projects/passive_liveliness/venv/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/aditya/Documents/Projects/passive_liveliness/main.py", line 49, in passive_liveliness
+    test(image_path, "./resources/anti_spoof_models", 0))
+  File "/home/aditya/Documents/Projects/passive_liveliness/test_pad.py", line 56, in test
+    width = (image.shape)[1]
+AttributeError: 'NoneType' object has no attribute 'shape'
+2024-01-25 14:18:33,913 [INFO] [_internal.py:96]: 127.0.0.1 - - [25/Jan/2024 14:18:33] "[35m[1mPOST /passive_liveliness HTTP/1.1[0m" 500 -
+2024-01-25 14:18:35,554 [INFO] [test_pad.py:39]: inside the presentation attack detection
+2024-01-25 14:18:35,596 [ERROR] [app.py:828]: Exception on /passive_liveliness [POST]
+Traceback (most recent call last):
+  File "/home/aditya/Documents/Projects/passive_liveliness/venv/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/aditya/Documents/Projects/passive_liveliness/venv/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/aditya/Documents/Projects/passive_liveliness/venv/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/aditya/Documents/Projects/passive_liveliness/venv/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/aditya/Documents/Projects/passive_liveliness/main.py", line 49, in passive_liveliness
+    test(image_path, "./resources/anti_spoof_models", 0))
+  File "/home/aditya/Documents/Projects/passive_liveliness/test_pad.py", line 56, in test
+    width = (image.shape)[1]
+AttributeError: 'NoneType' object has no attribute 'shape'
+2024-01-25 14:18:35,596 [INFO] [_internal.py:96]: 127.0.0.1 - - [25/Jan/2024 14:18:35] "[35m[1mPOST /passive_liveliness HTTP/1.1[0m" 500 -
+2024-01-25 14:18:37,776 [INFO] [test_pad.py:39]: inside the presentation attack detection
+2024-01-25 14:18:37,814 [ERROR] [app.py:828]: Exception on /passive_liveliness [POST]
+Traceback (most recent call last):
+  File "/home/aditya/Documents/Projects/passive_liveliness/venv/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/aditya/Documents/Projects/passive_liveliness/venv/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/aditya/Documents/Projects/passive_liveliness/venv/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/aditya/Documents/Projects/passive_liveliness/venv/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/aditya/Documents/Projects/passive_liveliness/main.py", line 49, in passive_liveliness
+    test(image_path, "./resources/anti_spoof_models", 0))
+  File "/home/aditya/Documents/Projects/passive_liveliness/test_pad.py", line 56, in test
+    width = (image.shape)[1]
+AttributeError: 'NoneType' object has no attribute 'shape'
+2024-01-25 14:18:37,815 [INFO] [_internal.py:96]: 127.0.0.1 - - [25/Jan/2024 14:18:37] "[35m[1mPOST /passive_liveliness HTTP/1.1[0m" 500 -
+2024-01-25 14:20:23,449 [INFO] [_internal.py:96]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-01-25 14:20:23,449 [INFO] [_internal.py:96]: [33mPress CTRL+C to quit[0m
+2024-01-25 14:20:37,449 [INFO] [test_pad.py:39]: inside the presentation attack detection
+2024-01-25 14:20:37,516 [INFO] [test_pad.py:61]: height_width_ratio = 1.5814977973568283
+2024-01-25 14:20:37,516 [INFO] [test_pad.py:28]: height is 718
+2024-01-25 14:20:37,516 [INFO] [test_pad.py:29]: width is 454
+2024-01-25 14:20:37,516 [INFO] [test_pad.py:31]: Image is not appropriate!!! Height Width should be 4/3.
+2024-01-25 14:20:37,531 [INFO] [test_pad.py:130]: w_input = 80, h_input = 80
+2024-01-25 14:20:37,878 [INFO] [test_pad.py:130]: w_input = 80, h_input = 80
+2024-01-25 14:20:37,981 [INFO] [test_pad.py:147]: prediction is [[2.71678698e-04 1.99951875e+00 2.09609556e-04]]
+2024-01-25 14:20:37,981 [INFO] [test_pad.py:159]: value is 99.97593760490417
+2024-01-25 14:20:37,981 [INFO] [test_pad.py:160]: label is 1
+2024-01-25 14:20:37,981 [INFO] [test_pad.py:164]: Image 'image_folder/test_maskWQCO4O.jpg' is Real Face. Score: 99.98.
+2024-01-25 14:20:37,981 [INFO] [test_pad.py:175]: Prediction cost 0.45 s
+2024-01-25 14:20:37,981 [INFO] [test_pad.py:196]: warning
+2024-01-25 14:20:38,109 [INFO] [test_pad.py:203]: ---------------------------passive--------------------------
+2024-01-25 14:20:38,110 [INFO] [main.py:68]: passive liveliness check is done
+2024-01-25 14:20:38,111 [INFO] [_internal.py:96]: 127.0.0.1 - - [25/Jan/2024 14:20:38] "POST /passive_liveliness HTTP/1.1" 200 -
+2024-01-25 14:21:14,995 [INFO] [test_pad.py:39]: inside the presentation attack detection
+2024-01-25 14:21:15,039 [INFO] [test_pad.py:61]: height_width_ratio = 0.71267252195734
+2024-01-25 14:21:15,040 [INFO] [test_pad.py:28]: height is 568
+2024-01-25 14:21:15,040 [INFO] [test_pad.py:29]: width is 797
+2024-01-25 14:21:15,040 [INFO] [test_pad.py:31]: Image is not appropriate!!! Height Width should be 4/3.
+2024-01-25 14:21:15,057 [INFO] [test_pad.py:130]: w_input = 80, h_input = 80
+2024-01-25 14:21:15,127 [INFO] [test_pad.py:130]: w_input = 80, h_input = 80
+2024-01-25 14:21:15,206 [INFO] [test_pad.py:147]: prediction is [[0.03392103 1.04988655 0.91619244]]
+2024-01-25 14:21:15,206 [INFO] [test_pad.py:159]: value is 52.49432772397995
+2024-01-25 14:21:15,206 [INFO] [test_pad.py:160]: label is 1
+2024-01-25 14:21:15,206 [INFO] [test_pad.py:164]: Image 'image_folder/test_maskX8SILO.jpg' is Real Face. Score: 52.49.
+2024-01-25 14:21:15,206 [INFO] [test_pad.py:175]: Prediction cost 0.15 s
+2024-01-25 14:21:15,206 [INFO] [test_pad.py:196]: warning
+2024-01-25 14:21:15,334 [INFO] [test_pad.py:203]: ---------------------------passive--------------------------
+2024-01-25 14:21:15,335 [INFO] [main.py:68]: passive liveliness check is done
+2024-01-25 14:21:15,336 [INFO] [_internal.py:96]: 127.0.0.1 - - [25/Jan/2024 14:21:15] "POST /passive_liveliness HTTP/1.1" 200 -
+2024-01-25 14:23:40,805 [INFO] [test_pad.py:39]: inside the presentation attack detection
+2024-01-25 14:23:40,816 [INFO] [test_pad.py:61]: height_width_ratio = 1.0
+2024-01-25 14:23:40,816 [INFO] [test_pad.py:28]: height is 500
+2024-01-25 14:23:40,816 [INFO] [test_pad.py:29]: width is 500
+2024-01-25 14:23:40,816 [INFO] [test_pad.py:31]: Image is not appropriate!!! Height Width should be 4/3.
+2024-01-25 14:23:40,828 [INFO] [test_pad.py:130]: w_input = 80, h_input = 80
+2024-01-25 14:23:40,905 [INFO] [test_pad.py:130]: w_input = 80, h_input = 80
+2024-01-25 14:23:41,000 [INFO] [test_pad.py:147]: prediction is [[1.24380792e-04 1.98420155e+00 1.56740807e-02]]
+2024-01-25 14:23:41,000 [INFO] [test_pad.py:159]: value is 99.21007752418518
+2024-01-25 14:23:41,000 [INFO] [test_pad.py:160]: label is 1
+2024-01-25 14:23:41,000 [INFO] [test_pad.py:164]: Image 'image_folder/selfie-removebg-previewYKHPK3.jpg' is Real Face. Score: 99.21.
+2024-01-25 14:23:41,000 [INFO] [test_pad.py:175]: Prediction cost 0.17 s
+2024-01-25 14:23:41,000 [INFO] [test_pad.py:196]: warning
+2024-01-25 14:23:41,138 [INFO] [test_pad.py:203]: ---------------------------passive--------------------------
+2024-01-25 14:23:41,141 [INFO] [main.py:68]: passive liveliness check is done
+2024-01-25 14:23:41,141 [INFO] [_internal.py:96]: 127.0.0.1 - - [25/Jan/2024 14:23:41] "POST /passive_liveliness HTTP/1.1" 200 -
+2024-01-25 14:24:56,385 [INFO] [test_pad.py:39]: inside the presentation attack detection
+2024-01-25 14:24:56,421 [INFO] [test_pad.py:61]: height_width_ratio = 0.71267252195734
+2024-01-25 14:24:56,421 [INFO] [test_pad.py:28]: height is 568
+2024-01-25 14:24:56,421 [INFO] [test_pad.py:29]: width is 797
+2024-01-25 14:24:56,421 [INFO] [test_pad.py:31]: Image is not appropriate!!! Height Width should be 4/3.
+2024-01-25 14:24:56,433 [INFO] [test_pad.py:130]: w_input = 80, h_input = 80
+2024-01-25 14:24:56,506 [INFO] [test_pad.py:130]: w_input = 80, h_input = 80
+2024-01-25 14:24:56,580 [INFO] [test_pad.py:147]: prediction is [[0.03392103 1.04988655 0.91619244]]
+2024-01-25 14:24:56,581 [INFO] [test_pad.py:159]: value is 52.49432772397995
+2024-01-25 14:24:56,581 [INFO] [test_pad.py:160]: label is 1
+2024-01-25 14:24:56,581 [INFO] [test_pad.py:164]: Image 'image_folder/test_mask76JIU2.jpg' is Real Face. Score: 52.49.
+2024-01-25 14:24:56,581 [INFO] [test_pad.py:175]: Prediction cost 0.15 s
+2024-01-25 14:24:56,581 [INFO] [test_pad.py:196]: warning
+2024-01-25 14:24:56,699 [INFO] [test_pad.py:203]: ---------------------------passive--------------------------
+2024-01-25 14:24:56,701 [INFO] [main.py:68]: passive liveliness check is done
+2024-01-25 14:24:56,703 [INFO] [_internal.py:96]: 127.0.0.1 - - [25/Jan/2024 14:24:56] "POST /passive_liveliness HTTP/1.1" 200 -
+2024-01-25 14:25:12,358 [INFO] [test_pad.py:39]: inside the presentation attack detection
+2024-01-25 14:25:12,400 [INFO] [test_pad.py:61]: height_width_ratio = 1.0666666666666667
+2024-01-25 14:25:12,400 [INFO] [test_pad.py:28]: height is 768
+2024-01-25 14:25:12,400 [INFO] [test_pad.py:29]: width is 720
+2024-01-25 14:25:12,400 [INFO] [test_pad.py:31]: Image is not appropriate!!! Height Width should be 4/3.
+2024-01-25 14:25:12,412 [INFO] [test_pad.py:130]: w_input = 80, h_input = 80
+2024-01-25 14:25:12,474 [INFO] [test_pad.py:130]: w_input = 80, h_input = 80
+2024-01-25 14:25:12,549 [INFO] [test_pad.py:147]: prediction is [[0.00955139 1.96268815 0.02776047]]
+2024-01-25 14:25:12,550 [INFO] [test_pad.py:159]: value is 98.1344074010849
+2024-01-25 14:25:12,550 [INFO] [test_pad.py:160]: label is 1
+2024-01-25 14:25:12,550 [INFO] [test_pad.py:164]: Image 'image_folder/test_mask39QSGJ.jpg' is Real Face. Score: 98.13.
+2024-01-25 14:25:12,550 [INFO] [test_pad.py:175]: Prediction cost 0.14 s
+2024-01-25 14:25:12,550 [INFO] [test_pad.py:196]: warning
+2024-01-25 14:25:12,672 [INFO] [test_pad.py:203]: ---------------------------passive--------------------------
+2024-01-25 14:25:12,674 [INFO] [main.py:68]: passive liveliness check is done
+2024-01-25 14:25:12,675 [INFO] [_internal.py:96]: 127.0.0.1 - - [25/Jan/2024 14:25:12] "POST /passive_liveliness HTTP/1.1" 200 -
+2024-01-25 14:25:23,522 [INFO] [test_pad.py:39]: inside the presentation attack detection
+2024-01-25 14:25:23,566 [INFO] [test_pad.py:61]: height_width_ratio = 1.0
+2024-01-25 14:25:23,566 [INFO] [test_pad.py:28]: height is 1600
+2024-01-25 14:25:23,566 [INFO] [test_pad.py:29]: width is 1600
+2024-01-25 14:25:23,566 [INFO] [test_pad.py:31]: Image is not appropriate!!! Height Width should be 4/3.
+2024-01-25 14:25:23,577 [INFO] [test_pad.py:130]: w_input = 80, h_input = 80
+2024-01-25 14:25:23,638 [INFO] [test_pad.py:130]: w_input = 80, h_input = 80
+2024-01-25 14:25:23,720 [INFO] [test_pad.py:147]: prediction is [[0.30024205 0.00556876 1.69418913]]
+2024-01-25 14:25:23,721 [INFO] [test_pad.py:159]: value is 84.70945656299591
+2024-01-25 14:25:23,721 [INFO] [test_pad.py:160]: label is 2
+2024-01-25 14:25:23,721 [INFO] [test_pad.py:171]: Image 'image_folder/selfieVPOZ6X.jpeg' is Fake Face. Score: 84.71.
+2024-01-25 14:25:23,721 [INFO] [test_pad.py:175]: Prediction cost 0.14 s
+2024-01-25 14:25:23,721 [INFO] [test_pad.py:196]: warning
+2024-01-25 14:25:23,836 [INFO] [test_pad.py:203]: ---------------------------passive--------------------------
+2024-01-25 14:25:23,837 [INFO] [main.py:68]: passive liveliness check is done
+2024-01-25 14:25:23,838 [INFO] [_internal.py:96]: 127.0.0.1 - - [25/Jan/2024 14:25:23] "POST /passive_liveliness HTTP/1.1" 200 -
+2024-01-25 14:31:42,452 [INFO] [_internal.py:96]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-01-25 14:31:42,452 [INFO] [_internal.py:96]: [33mPress CTRL+C to quit[0m
+2024-01-25 14:31:48,616 [INFO] [test_pad.py:39]: inside the presentation attack detection
+2024-01-25 14:31:48,915 [INFO] [test_pad.py:61]: height_width_ratio = 1.0
+2024-01-25 14:31:48,916 [INFO] [test_pad.py:28]: height is 1600
+2024-01-25 14:31:48,916 [INFO] [test_pad.py:29]: width is 1600
+2024-01-25 14:31:48,916 [INFO] [test_pad.py:31]: Image is not appropriate!!! Height Width should be 4/3.
+2024-01-25 14:31:48,929 [INFO] [test_pad.py:130]: w_input = 80, h_input = 80
+2024-01-25 14:31:49,178 [ERROR] [app.py:828]: Exception on /passive_liveliness [POST]
+Traceback (most recent call last):
+  File "/home/aditya/Documents/Projects/passive_liveliness/venv/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/aditya/Documents/Projects/passive_liveliness/venv/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/aditya/Documents/Projects/passive_liveliness/venv/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/aditya/Documents/Projects/passive_liveliness/venv/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/aditya/Documents/Projects/passive_liveliness/main.py", line 49, in passive_liveliness
+    test(image_path, "./resources/anti_spoof_models", 0))
+  File "/home/aditya/Documents/Projects/passive_liveliness/test_pad.py", line 142, in test
+    prediction += model_test.predict(img, os.path.join(model_dir, model_name))
+  File "/home/aditya/Documents/Projects/passive_liveliness/src/anti_spoof_predict.py", line 90, in predict
+    result = self.model.forward(img)
+  File "/home/aditya/Documents/Projects/passive_liveliness/src/model_lib/MiniFASNet.py", line 231, in forward
+    out = self.linear(out)
+  File "/home/aditya/Documents/Projects/passive_liveliness/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/aditya/Documents/Projects/passive_liveliness/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/aditya/Documents/Projects/passive_liveliness/venv/lib/python3.10/site-packages/torch/nn/modules/linear.py", line 114, in forward
+    return F.linear(input, self.weight, self.bias)
+RuntimeError: mat1 and mat2 shapes cannot be multiplied (1x591872 and 512x128)
+2024-01-25 14:31:49,180 [INFO] [_internal.py:96]: 127.0.0.1 - - [25/Jan/2024 14:31:49] "[35m[1mPOST /passive_liveliness HTTP/1.1[0m" 500 -
+2024-01-25 14:31:50,694 [INFO] [test_pad.py:39]: inside the presentation attack detection
+2024-01-25 14:31:50,930 [INFO] [test_pad.py:61]: height_width_ratio = 1.0
+2024-01-25 14:31:50,930 [INFO] [test_pad.py:28]: height is 1600
+2024-01-25 14:31:50,930 [INFO] [test_pad.py:29]: width is 1600
+2024-01-25 14:31:50,930 [INFO] [test_pad.py:31]: Image is not appropriate!!! Height Width should be 4/3.
+2024-01-25 14:31:50,947 [INFO] [test_pad.py:130]: w_input = 80, h_input = 80
+2024-01-25 14:31:51,038 [ERROR] [app.py:828]: Exception on /passive_liveliness [POST]
+Traceback (most recent call last):
+  File "/home/aditya/Documents/Projects/passive_liveliness/venv/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/aditya/Documents/Projects/passive_liveliness/venv/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/aditya/Documents/Projects/passive_liveliness/venv/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/aditya/Documents/Projects/passive_liveliness/venv/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/aditya/Documents/Projects/passive_liveliness/main.py", line 49, in passive_liveliness
+    test(image_path, "./resources/anti_spoof_models", 0))
+  File "/home/aditya/Documents/Projects/passive_liveliness/test_pad.py", line 142, in test
+    prediction += model_test.predict(img, os.path.join(model_dir, model_name))
+  File "/home/aditya/Documents/Projects/passive_liveliness/src/anti_spoof_predict.py", line 90, in predict
+    result = self.model.forward(img)
+  File "/home/aditya/Documents/Projects/passive_liveliness/src/model_lib/MiniFASNet.py", line 231, in forward
+    out = self.linear(out)
+  File "/home/aditya/Documents/Projects/passive_liveliness/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/aditya/Documents/Projects/passive_liveliness/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/aditya/Documents/Projects/passive_liveliness/venv/lib/python3.10/site-packages/torch/nn/modules/linear.py", line 114, in forward
+    return F.linear(input, self.weight, self.bias)
+RuntimeError: mat1 and mat2 shapes cannot be multiplied (1x591872 and 512x128)
+2024-01-25 14:31:51,039 [INFO] [_internal.py:96]: 127.0.0.1 - - [25/Jan/2024 14:31:51] "[35m[1mPOST /passive_liveliness HTTP/1.1[0m" 500 -
