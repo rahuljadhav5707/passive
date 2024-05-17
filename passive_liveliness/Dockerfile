@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY . .
 
-RUN mkdir logs
+#RUN mkdir logs
 
 RUN chmod 0777 -R /app
 
