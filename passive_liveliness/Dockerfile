@@ -6,7 +6,7 @@ COPY . .
 
 #RUN mkdir logs
 
-RUN chmod 0777 -R /app
+RUN chmod 0755 -R /app
 
 RUN pip install --upgrade pip setuptools
 
